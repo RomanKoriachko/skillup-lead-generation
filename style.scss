@@ -362,6 +362,13 @@ body {
 		padding: 40px 0px;
 		background-color: #efefef;
 		text-align: center;
+		.opportunities-section-img-wrapper {
+			max-width: 500px;
+			margin: 30px auto;
+			> img {
+				width: 100%;
+			}
+		}
 		.opportunities-subtitle {
 			@include fonts.t1();
 			width: 80%;
@@ -385,8 +392,6 @@ body {
 		padding-bottom: 80px;
 		.program-section-header {
 			margin-top: 0;
-		}
-		.program-section-header {
 			text-align: center;
 		}
 		.program-section-row {
@@ -407,126 +412,172 @@ body {
 			.program-section-item {
 				@include fonts.t2();
 				margin-bottom: 24px;
+				span {
+					font-weight: 700;
+				}
 			}
 		}
 	}
-	.companies-section {
-		color: white;
-		background: #0d1a30;
-		padding-top: 50px;
+	.coach-section {
+		padding-top: 80px;
 		padding-bottom: 100px;
-		overflow: hidden;
-		.companies-section-header {
-			@include fonts.h2();
-			margin-bottom: 50px;
-		}
-		.companies-slider,
-		.companies-tablet-slider {
-			.companies-section-item {
-				width: 184px;
-				height: 184px;
-				border: 4px solid #333142;
-				border-radius: 12px;
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: 85%;
-				margin-right: 17px;
+		background-color: #efefef;
+		.coach-section-content {
+			justify-content: space-between;
+			gap: 30px;
+			.coach-img-wrapper {
+				width: 40%;
+				.coach-img {
+					width: 100%;
+				}
 			}
-			.company-1 {
-				background-image: url(images/companies-logo-1.svg);
+			.coach-section-description {
+				width: 50%;
+				.coach-section-content-header {
+					margin-bottom: 30px;
+					@include fonts.h3();
+				}
+				.coach-name {
+					@include fonts.p2();
+					text-align: left;
+					margin-bottom: 20px;
+				}
+				.coach-section-list-item {
+					align-items: flex-start;
+					gap: 16px;
+					margin-bottom: 16px;
+					.coach-section-list-item-number {
+						min-width: 24px;
+						min-height: 24px;
+						background-image: url(images/check-2-img.svg);
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+					}
+					p {
+						@include fonts.t2();
+					}
+				}
 			}
-			.company-2 {
-				background-image: url(images/companies-logo-2.svg);
-			}
-			.company-3 {
-				background-image: url(images/companies-logo-3.svg);
-			}
-			.company-4 {
-				background-image: url(images/companies-logo-4.svg);
-			}
-			.company-5 {
-				background-image: url(images/companies-logo-5.svg);
-			}
-			.company-6 {
-				background-image: url(images/companies-logo-6.svg);
-			}
-			.company-7 {
-				background-image: url(images/companies-logo-7.svg);
-			}
-			.company-8 {
-				background-image: url(images/companies-logo-8.svg);
-			}
-			.company-9 {
-				background-image: url(images/companies-logo-9.svg);
-			}
-			.company-10 {
-				background-image: url(images/companies-logo-10.svg);
-			}
-			.company-11 {
-				background-image: url(images/companies-logo-11.svg);
-			}
-			.company-12 {
-				background-image: url(images/companies-logo-12.svg);
-			}
-			.company-13 {
-				background-image: url(images/companies-logo-13.svg);
-			}
-			.company-14 {
-				background-image: url(images/companies-logo-14.svg);
-			}
-			.company-15 {
-				background-image: url(images/companies-logo-15.svg);
-			}
-			.company-16 {
-				background-image: url(images/companies-logo-16.svg);
-			}
-			.company-17 {
-				background-image: url(images/companies-logo-17.svg);
-			}
-			.company-18 {
-				background-image: url(images/companies-logo-18.svg);
-			}
-			.company-19 {
-				background-image: url(images/companies-logo-19.svg);
-			}
-			.company-20 {
-				background-image: url(images/companies-logo-20.svg);
-			}
-			.company-21 {
-				background-image: url(images/companies-logo-21.svg);
-			}
-			.company-22 {
-				background-image: url(images/companies-logo-22.svg);
-			}
-			.company-23 {
-				background-image: url(images/companies-logo-23.svg);
-			}
-			.company-24 {
-				background-image: url(images/companies-logo-24.svg);
-			}
-			.company-25 {
-				background-image: url(images/companies-logo-25.svg);
-			}
-			.company-26 {
-				background-image: url(images/companies-logo-26.svg);
-			}
-			.company-27 {
-				background-image: url(images/companies-logo-27.svg);
-			}
-			.company-28 {
-				background-image: url(images/companies-logo-28.svg);
-			}
-			.company-29 {
-				background-image: url(images/companies-logo-29.svg);
-			}
-			.company-30 {
-				background-image: url(images/companies-logo-30.svg);
-			}
-		}
-		.companies-tablet-slider {
-			display: none;
 		}
 	}
+	// .companies-section {
+	// 	color: white;
+	// 	background: #0d1a30;
+	// 	padding-top: 50px;
+	// 	padding-bottom: 100px;
+	// 	overflow: hidden;
+	// 	.companies-section-header {
+	// 		@include fonts.h2();
+	// 		margin-bottom: 50px;
+	// 	}
+	// 	.companies-slider,
+	// 	.companies-tablet-slider {
+	// 		.companies-section-item {
+	// 			width: 184px;
+	// 			height: 184px;
+	// 			border: 4px solid #333142;
+	// 			border-radius: 12px;
+	// 			background-position: center;
+	// 			background-repeat: no-repeat;
+	// 			background-size: 85%;
+	// 			margin-right: 17px;
+	// 		}
+	// 		.company-1 {
+	// 			background-image: url(images/companies-logo-1.svg);
+	// 		}
+	// 		.company-2 {
+	// 			background-image: url(images/companies-logo-2.svg);
+	// 		}
+	// 		.company-3 {
+	// 			background-image: url(images/companies-logo-3.svg);
+	// 		}
+	// 		.company-4 {
+	// 			background-image: url(images/companies-logo-4.svg);
+	// 		}
+	// 		.company-5 {
+	// 			background-image: url(images/companies-logo-5.svg);
+	// 		}
+	// 		.company-6 {
+	// 			background-image: url(images/companies-logo-6.svg);
+	// 		}
+	// 		.company-7 {
+	// 			background-image: url(images/companies-logo-7.svg);
+	// 		}
+	// 		.company-8 {
+	// 			background-image: url(images/companies-logo-8.svg);
+	// 		}
+	// 		.company-9 {
+	// 			background-image: url(images/companies-logo-9.svg);
+	// 		}
+	// 		.company-10 {
+	// 			background-image: url(images/companies-logo-10.svg);
+	// 		}
+	// 		.company-11 {
+	// 			background-image: url(images/companies-logo-11.svg);
+	// 		}
+	// 		.company-12 {
+	// 			background-image: url(images/companies-logo-12.svg);
+	// 		}
+	// 		.company-13 {
+	// 			background-image: url(images/companies-logo-13.svg);
+	// 		}
+	// 		.company-14 {
+	// 			background-image: url(images/companies-logo-14.svg);
+	// 		}
+	// 		.company-15 {
+	// 			background-image: url(images/companies-logo-15.svg);
+	// 		}
+	// 		.company-16 {
+	// 			background-image: url(images/companies-logo-16.svg);
+	// 		}
+	// 		.company-17 {
+	// 			background-image: url(images/companies-logo-17.svg);
+	// 		}
+	// 		.company-18 {
+	// 			background-image: url(images/companies-logo-18.svg);
+	// 		}
+	// 		.company-19 {
+	// 			background-image: url(images/companies-logo-19.svg);
+	// 		}
+	// 		.company-20 {
+	// 			background-image: url(images/companies-logo-20.svg);
+	// 		}
+	// 		.company-21 {
+	// 			background-image: url(images/companies-logo-21.svg);
+	// 		}
+	// 		.company-22 {
+	// 			background-image: url(images/companies-logo-22.svg);
+	// 		}
+	// 		.company-23 {
+	// 			background-image: url(images/companies-logo-23.svg);
+	// 		}
+	// 		.company-24 {
+	// 			background-image: url(images/companies-logo-24.svg);
+	// 		}
+	// 		.company-25 {
+	// 			background-image: url(images/companies-logo-25.svg);
+	// 		}
+	// 		.company-26 {
+	// 			background-image: url(images/companies-logo-26.svg);
+	// 		}
+	// 		.company-27 {
+	// 			background-image: url(images/companies-logo-27.svg);
+	// 		}
+	// 		.company-28 {
+	// 			background-image: url(images/companies-logo-28.svg);
+	// 		}
+	// 		.company-29 {
+	// 			background-image: url(images/companies-logo-29.svg);
+	// 		}
+	// 		.company-30 {
+	// 			background-image: url(images/companies-logo-30.svg);
+	// 		}
+	// 	}
+	// 	.companies-tablet-slider {
+	// 		display: none;
+	// 	}
+	// }
 	.numbers-section {
 		padding-bottom: 104px;
 		.numbers-header {
@@ -615,48 +666,6 @@ body {
 			@include fonts.p2();
 			text-align: center;
 			margin-top: 32px;
-		}
-	}
-	.coach-section {
-		padding-top: 80px;
-		padding-bottom: 100px;
-		.coach-section-content {
-			justify-content: space-between;
-			gap: 30px;
-			.coach-img-wrapper {
-				width: 40%;
-				.coach-img {
-					width: 100%;
-				}
-			}
-			.coach-section-description {
-				width: 50%;
-				.coach-section-content-header {
-					margin-bottom: 30px;
-					@include fonts.h3();
-				}
-				.coach-name {
-					@include fonts.p2();
-					text-align: left;
-					margin-bottom: 20px;
-				}
-				.coach-section-list-item {
-					align-items: flex-start;
-					gap: 16px;
-					margin-bottom: 16px;
-					.coach-section-list-item-number {
-						min-width: 24px;
-						min-height: 24px;
-						background-image: url(images/check-2-img.svg);
-						background-position: center;
-						background-repeat: no-repeat;
-						background-size: cover;
-					}
-					p {
-						@include fonts.t2();
-					}
-				}
-			}
 		}
 	}
 	.form-section {
@@ -919,18 +928,34 @@ body {
 				width: 100%;
 			}
 		}
-		.companies-section {
-			.companies-section-header {
-				text-align: center;
-				@include fonts.h3();
-			}
-			.companies-tablet-slider {
-				display: block;
-			}
-			.companies-slider {
-				display: none;
+		.coach-section {
+			.coach-section-content {
+				flex-direction: column;
+				align-items: center;
+				.coach-img-wrapper {
+					width: 100%;
+					text-align: center;
+					.coach-img {
+						max-width: 480px;
+					}
+				}
+				.coach-section-description {
+					width: 100%;
+				}
 			}
 		}
+		// .companies-section {
+		// 	.companies-section-header {
+		// 		text-align: center;
+		// 		@include fonts.h3();
+		// 	}
+		// 	.companies-tablet-slider {
+		// 		display: block;
+		// 	}
+		// 	.companies-slider {
+		// 		display: none;
+		// 	}
+		// }
 		.numbers-section {
 			padding-bottom: 48px;
 			.numbers-row {
@@ -949,22 +974,6 @@ body {
 			}
 			.benefits-footer {
 				margin-top: 24px;
-			}
-		}
-		.coach-section {
-			.coach-section-content {
-				flex-direction: column;
-				align-items: center;
-				.coach-img-wrapper {
-					width: 100%;
-					text-align: center;
-					.coach-img {
-						max-width: 480px;
-					}
-				}
-				.coach-section-description {
-					width: 100%;
-				}
 			}
 		}
 		.form-section {
@@ -1116,23 +1125,38 @@ body {
 				font-size: 21px;
 			}
 		}
-		.companies-section {
-			padding-top: 48px;
-			padding-bottom: 48px;
-			margin-top: 0;
-			margin-bottom: 0;
-			.companies-section-header {
-				margin-bottom: 48px;
-				text-align: left;
-			}
-			.companies-slider {
-				.companies-section-item {
-					width: 160px;
-					height: 160px;
-					margin-right: 10px;
+		.coach-section {
+			padding: 48px 0px;
+			.coach-section-content {
+				gap: 30px;
+				.coach-img {
+					width: 221px;
+				}
+				.coach-section-content-header {
+					margin-bottom: 16px;
+				}
+				.coach-name {
+					margin-bottom: 18px;
 				}
 			}
 		}
+		// .companies-section {
+		// 	padding-top: 48px;
+		// 	padding-bottom: 48px;
+		// 	margin-top: 0;
+		// 	margin-bottom: 0;
+		// 	.companies-section-header {
+		// 		margin-bottom: 48px;
+		// 		text-align: left;
+		// 	}
+		// 	.companies-slider {
+		// 		.companies-section-item {
+		// 			width: 160px;
+		// 			height: 160px;
+		// 			margin-right: 10px;
+		// 		}
+		// 	}
+		// }
 		.numbers-section {
 			.numbers-header {
 				font-size: 26px;
@@ -1148,21 +1172,6 @@ body {
 			padding-top: 40px;
 			.benefits-footer {
 				text-align: left;
-			}
-		}
-		.coach-section {
-			padding: 48px 0px;
-			.coach-section-content {
-				gap: 30px;
-				.coach-img {
-					width: 221px;
-				}
-				.coach-section-content-header {
-					margin-bottom: 16px;
-				}
-				.coach-name {
-					margin-bottom: 18px;
-				}
 			}
 		}
 		.form-section {

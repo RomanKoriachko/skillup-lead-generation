@@ -521,6 +521,13 @@ body {
   background-color: #efefef;
   text-align: center;
 }
+.main .opportunities-section .opportunities-section-img-wrapper {
+  max-width: 500px;
+  margin: 30px auto;
+}
+.main .opportunities-section .opportunities-section-img-wrapper > img {
+  width: 100%;
+}
 .main .opportunities-section .opportunities-subtitle {
   font-family: "Exo 2";
   font-weight: 700;
@@ -587,8 +594,6 @@ body {
 }
 .main .program-section .program-section-header {
   margin-top: 0;
-}
-.main .program-section .program-section-header {
   text-align: center;
 }
 .main .program-section .program-section-row {
@@ -615,153 +620,60 @@ body {
   line-height: 24px;
   margin-bottom: 24px;
 }
-.main .companies-section {
-  color: white;
-  background: #0d1a30;
-  padding-top: 50px;
-  padding-bottom: 100px;
-  overflow: hidden;
+.main .program-section .program-section-text .program-section-item span {
+  font-weight: 700;
 }
-.main .companies-section .companies-section-header {
+.main .coach-section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: #efefef;
+}
+.main .coach-section .coach-section-content {
+  justify-content: space-between;
+  gap: 30px;
+}
+.main .coach-section .coach-section-content .coach-img-wrapper {
+  width: 40%;
+}
+.main .coach-section .coach-section-content .coach-img-wrapper .coach-img {
+  width: 100%;
+}
+.main .coach-section .coach-section-content .coach-section-description {
+  width: 50%;
+}
+.main .coach-section .coach-section-content .coach-section-description .coach-section-content-header {
+  margin-bottom: 30px;
   font-family: "Exo 2";
   font-weight: 800;
-  font-size: 36px;
-  line-height: 48px;
-  margin-bottom: 50px;
+  font-size: 30px;
+  line-height: 130%;
 }
-.main .companies-section .companies-slider .companies-section-item,
-.main .companies-section .companies-tablet-slider .companies-section-item {
-  width: 184px;
-  height: 184px;
-  border: 4px solid #333142;
-  border-radius: 12px;
+.main .coach-section .coach-section-content .coach-section-description .coach-name {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.main .coach-section .coach-section-content .coach-section-description .coach-section-list-item {
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.main .coach-section .coach-section-content .coach-section-description .coach-section-list-item .coach-section-list-item-number {
+  min-width: 24px;
+  min-height: 24px;
+  background-image: url(images/check-2-img.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 85%;
-  margin-right: 17px;
+  background-size: cover;
 }
-.main .companies-section .companies-slider .company-1,
-.main .companies-section .companies-tablet-slider .company-1 {
-  background-image: url(images/companies-logo-1.svg);
-}
-.main .companies-section .companies-slider .company-2,
-.main .companies-section .companies-tablet-slider .company-2 {
-  background-image: url(images/companies-logo-2.svg);
-}
-.main .companies-section .companies-slider .company-3,
-.main .companies-section .companies-tablet-slider .company-3 {
-  background-image: url(images/companies-logo-3.svg);
-}
-.main .companies-section .companies-slider .company-4,
-.main .companies-section .companies-tablet-slider .company-4 {
-  background-image: url(images/companies-logo-4.svg);
-}
-.main .companies-section .companies-slider .company-5,
-.main .companies-section .companies-tablet-slider .company-5 {
-  background-image: url(images/companies-logo-5.svg);
-}
-.main .companies-section .companies-slider .company-6,
-.main .companies-section .companies-tablet-slider .company-6 {
-  background-image: url(images/companies-logo-6.svg);
-}
-.main .companies-section .companies-slider .company-7,
-.main .companies-section .companies-tablet-slider .company-7 {
-  background-image: url(images/companies-logo-7.svg);
-}
-.main .companies-section .companies-slider .company-8,
-.main .companies-section .companies-tablet-slider .company-8 {
-  background-image: url(images/companies-logo-8.svg);
-}
-.main .companies-section .companies-slider .company-9,
-.main .companies-section .companies-tablet-slider .company-9 {
-  background-image: url(images/companies-logo-9.svg);
-}
-.main .companies-section .companies-slider .company-10,
-.main .companies-section .companies-tablet-slider .company-10 {
-  background-image: url(images/companies-logo-10.svg);
-}
-.main .companies-section .companies-slider .company-11,
-.main .companies-section .companies-tablet-slider .company-11 {
-  background-image: url(images/companies-logo-11.svg);
-}
-.main .companies-section .companies-slider .company-12,
-.main .companies-section .companies-tablet-slider .company-12 {
-  background-image: url(images/companies-logo-12.svg);
-}
-.main .companies-section .companies-slider .company-13,
-.main .companies-section .companies-tablet-slider .company-13 {
-  background-image: url(images/companies-logo-13.svg);
-}
-.main .companies-section .companies-slider .company-14,
-.main .companies-section .companies-tablet-slider .company-14 {
-  background-image: url(images/companies-logo-14.svg);
-}
-.main .companies-section .companies-slider .company-15,
-.main .companies-section .companies-tablet-slider .company-15 {
-  background-image: url(images/companies-logo-15.svg);
-}
-.main .companies-section .companies-slider .company-16,
-.main .companies-section .companies-tablet-slider .company-16 {
-  background-image: url(images/companies-logo-16.svg);
-}
-.main .companies-section .companies-slider .company-17,
-.main .companies-section .companies-tablet-slider .company-17 {
-  background-image: url(images/companies-logo-17.svg);
-}
-.main .companies-section .companies-slider .company-18,
-.main .companies-section .companies-tablet-slider .company-18 {
-  background-image: url(images/companies-logo-18.svg);
-}
-.main .companies-section .companies-slider .company-19,
-.main .companies-section .companies-tablet-slider .company-19 {
-  background-image: url(images/companies-logo-19.svg);
-}
-.main .companies-section .companies-slider .company-20,
-.main .companies-section .companies-tablet-slider .company-20 {
-  background-image: url(images/companies-logo-20.svg);
-}
-.main .companies-section .companies-slider .company-21,
-.main .companies-section .companies-tablet-slider .company-21 {
-  background-image: url(images/companies-logo-21.svg);
-}
-.main .companies-section .companies-slider .company-22,
-.main .companies-section .companies-tablet-slider .company-22 {
-  background-image: url(images/companies-logo-22.svg);
-}
-.main .companies-section .companies-slider .company-23,
-.main .companies-section .companies-tablet-slider .company-23 {
-  background-image: url(images/companies-logo-23.svg);
-}
-.main .companies-section .companies-slider .company-24,
-.main .companies-section .companies-tablet-slider .company-24 {
-  background-image: url(images/companies-logo-24.svg);
-}
-.main .companies-section .companies-slider .company-25,
-.main .companies-section .companies-tablet-slider .company-25 {
-  background-image: url(images/companies-logo-25.svg);
-}
-.main .companies-section .companies-slider .company-26,
-.main .companies-section .companies-tablet-slider .company-26 {
-  background-image: url(images/companies-logo-26.svg);
-}
-.main .companies-section .companies-slider .company-27,
-.main .companies-section .companies-tablet-slider .company-27 {
-  background-image: url(images/companies-logo-27.svg);
-}
-.main .companies-section .companies-slider .company-28,
-.main .companies-section .companies-tablet-slider .company-28 {
-  background-image: url(images/companies-logo-28.svg);
-}
-.main .companies-section .companies-slider .company-29,
-.main .companies-section .companies-tablet-slider .company-29 {
-  background-image: url(images/companies-logo-29.svg);
-}
-.main .companies-section .companies-slider .company-30,
-.main .companies-section .companies-tablet-slider .company-30 {
-  background-image: url(images/companies-logo-30.svg);
-}
-.main .companies-section .companies-tablet-slider {
-  display: none;
+.main .coach-section .coach-section-content .coach-section-description .coach-section-list-item p {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
 }
 .main .numbers-section {
   padding-bottom: 104px;
@@ -906,57 +818,6 @@ body {
   line-height: 32px;
   text-align: center;
   margin-top: 32px;
-}
-.main .coach-section {
-  padding-top: 80px;
-  padding-bottom: 100px;
-}
-.main .coach-section .coach-section-content {
-  justify-content: space-between;
-  gap: 30px;
-}
-.main .coach-section .coach-section-content .coach-img-wrapper {
-  width: 40%;
-}
-.main .coach-section .coach-section-content .coach-img-wrapper .coach-img {
-  width: 100%;
-}
-.main .coach-section .coach-section-content .coach-section-description {
-  width: 50%;
-}
-.main .coach-section .coach-section-content .coach-section-description .coach-section-content-header {
-  margin-bottom: 30px;
-  font-family: "Exo 2";
-  font-weight: 800;
-  font-size: 30px;
-  line-height: 130%;
-}
-.main .coach-section .coach-section-content .coach-section-description .coach-name {
-  font-family: "Exo 2";
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  text-align: left;
-  margin-bottom: 20px;
-}
-.main .coach-section .coach-section-content .coach-section-description .coach-section-list-item {
-  align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 16px;
-}
-.main .coach-section .coach-section-content .coach-section-description .coach-section-list-item .coach-section-list-item-number {
-  min-width: 24px;
-  min-height: 24px;
-  background-image: url(images/check-2-img.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.main .coach-section .coach-section-content .coach-section-description .coach-section-list-item p {
-  font-family: "Exo 2";
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
 }
 .main .form-section {
   background: #0d1a30;
@@ -1276,18 +1137,19 @@ body {
     margin: 0;
     width: 100%;
   }
-  .main .companies-section .companies-section-header {
+  .main .coach-section .coach-section-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .coach-section .coach-section-content .coach-img-wrapper {
+    width: 100%;
     text-align: center;
-    font-family: "Exo 2";
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 130%;
   }
-  .main .companies-section .companies-tablet-slider {
-    display: block;
+  .main .coach-section .coach-section-content .coach-img-wrapper .coach-img {
+    max-width: 480px;
   }
-  .main .companies-section .companies-slider {
-    display: none;
+  .main .coach-section .coach-section-content .coach-section-description {
+    width: 100%;
   }
   .main .numbers-section {
     padding-bottom: 48px;
@@ -1308,20 +1170,6 @@ body {
   }
   .main .benefits-section .benefits-footer {
     margin-top: 24px;
-  }
-  .main .coach-section .coach-section-content {
-    flex-direction: column;
-    align-items: center;
-  }
-  .main .coach-section .coach-section-content .coach-img-wrapper {
-    width: 100%;
-    text-align: center;
-  }
-  .main .coach-section .coach-section-content .coach-img-wrapper .coach-img {
-    max-width: 480px;
-  }
-  .main .coach-section .coach-section-content .coach-section-description {
-    width: 100%;
   }
   .main .form-section .form-section-wrapper {
     flex-direction: column;
@@ -1454,20 +1302,20 @@ body {
   .main .opportunities-section .opportunities-wrapper {
     font-size: 21px;
   }
-  .main .companies-section {
-    padding-top: 48px;
-    padding-bottom: 48px;
-    margin-top: 0;
-    margin-bottom: 0;
+  .main .coach-section {
+    padding: 48px 0px;
   }
-  .main .companies-section .companies-section-header {
-    margin-bottom: 48px;
-    text-align: left;
+  .main .coach-section .coach-section-content {
+    gap: 30px;
   }
-  .main .companies-section .companies-slider .companies-section-item {
-    width: 160px;
-    height: 160px;
-    margin-right: 10px;
+  .main .coach-section .coach-section-content .coach-img {
+    width: 221px;
+  }
+  .main .coach-section .coach-section-content .coach-section-content-header {
+    margin-bottom: 16px;
+  }
+  .main .coach-section .coach-section-content .coach-name {
+    margin-bottom: 18px;
   }
   .main .numbers-section .numbers-header {
     font-size: 26px;
@@ -1484,21 +1332,6 @@ body {
   }
   .main .benefits-section .benefits-footer {
     text-align: left;
-  }
-  .main .coach-section {
-    padding: 48px 0px;
-  }
-  .main .coach-section .coach-section-content {
-    gap: 30px;
-  }
-  .main .coach-section .coach-section-content .coach-img {
-    width: 221px;
-  }
-  .main .coach-section .coach-section-content .coach-section-content-header {
-    margin-bottom: 16px;
-  }
-  .main .coach-section .coach-section-content .coach-name {
-    margin-bottom: 18px;
   }
   .main .form-section .form-section-wrapper {
     gap: 24px;
