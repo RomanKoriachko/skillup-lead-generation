@@ -676,6 +676,7 @@ body {
   line-height: 24px;
 }
 .main .numbers-section {
+  padding-top: 100px;
   padding-bottom: 104px;
 }
 .main .numbers-section .numbers-header {
@@ -789,35 +790,79 @@ body {
     box-shadow: 0 0 15px 5px #4ebd09;
   }
 }
-.main .benefits-section {
-  padding-top: 100px;
-  padding-bottom: 80px;
-  background-color: #efefef;
+.main .plan-section {
+  padding: 60px 0px;
+  text-align: center;
 }
-.main .benefits-section .benefits-header {
-  margin-top: 0;
+.main .plan-section .plan-title {
+  font-style: italic;
+  margin-bottom: 10px;
 }
-.main .benefits-section .check-img {
-  background-image: url(images/check-3-img.svg);
+.main .plan-section .plan-subtitle {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
 }
-.main .benefits-section .benefits-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+.main .plan-section .plan-wrapper {
+  padding: 20px 16px;
+  margin: 60px auto;
+  margin-bottom: 0;
+  background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
+  border-radius: 6px;
+  width: 60%;
 }
-.main .benefits-section .benefits-wrapper .benefits-item {
+.main .plan-section .plan-wrapper .plan-wrapper-text-1 {
   font-family: "Exo 2";
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
 }
-.main .benefits-section .benefits-footer {
+.main .plan-section .plan-wrapper .plan-wrapper-text-2 {
+  margin-top: 16px;
   font-family: "Exo 2";
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  text-align: center;
-  margin-top: 32px;
+}
+.main .plan-section .plan-btn {
+  width: 430px;
+  min-height: 50px;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background: #4ebd09;
+  border: none;
+  padding: 14px 15px;
+  border-radius: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s, ease;
+}
+@media (max-width: 750px) {
+  .main .plan-section .plan-btn {
+    width: 100%;
+  }
+}
+@media (hover: hover) {
+  .main .plan-section .plan-btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 1s ease;
+  }
+  .main .plan-section .plan-btn:hover::before {
+    box-shadow: 0 0 15px 5px #4ebd09;
+  }
 }
 .main .form-section {
   background: #0d1a30;
@@ -826,6 +871,7 @@ body {
 }
 .main .form-section .form-section-wrapper {
   align-items: center;
+  justify-content: center;
   gap: 32px;
 }
 .main .form-section .form-section-wrapper .form-section-text {
@@ -1162,14 +1208,8 @@ body {
   .main .numbers-section .numbers-row .numbers-item {
     width: 75%;
   }
-  .main .benefits-section {
-    padding-bottom: 48px;
-  }
-  .main .benefits-section .benefits-wrapper {
-    grid-template-columns: 1fr;
-  }
-  .main .benefits-section .benefits-footer {
-    margin-top: 24px;
+  .main .plan-section .plan-wrapper {
+    width: 80%;
   }
   .main .form-section .form-section-wrapper {
     flex-direction: column;
@@ -1320,18 +1360,19 @@ body {
   .main .numbers-section .numbers-header {
     font-size: 26px;
   }
+  .main .plan-section {
+    padding: 30px 0px;
+  }
+  .main .plan-section .plan-wrapper {
+    width: 100%;
+    margin-top: 24px;
+  }
   .main .sign-up-section button {
     width: 100%;
     font-family: "Exo 2";
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-  }
-  .main .benefits-section {
-    padding-top: 40px;
-  }
-  .main .benefits-section .benefits-footer {
-    text-align: left;
   }
   .main .form-section .form-section-wrapper {
     gap: 24px;
