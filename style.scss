@@ -246,10 +246,57 @@ body {
 			}
 		}
 	}
+	.who-is-section {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		.who-is-wrapper {
+			gap: 32px;
+			align-items: center;
+			.who-is-header {
+				margin-top: 0;
+			}
+			.who-is-text {
+				width: 50%;
+				.who-is-text-item {
+					@include fonts.t2();
+					margin-bottom: 24px;
+				}
+			}
+			.who-is-img-wrapper {
+				width: 50%;
+				text-align: center;
+				> img {
+					width: 100%;
+					max-width: 480px;
+				}
+			}
+			.who-is-tablet-content {
+				display: none;
+			}
+		}
+		.who-is-tablet-text {
+			@include fonts.p2();
+			font-weight: 400;
+			margin-bottom: 0px;
+			margin-top: 30px;
+			border-radius: 8px;
+			padding: 20px 10px;
+			background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
+		}
+		.who-is-btn-wrapper {
+			text-align: center;
+		}
+		.who-is-btn {
+			margin-top: 30px;
+			@include mainButton();
+			color: #ffffff;
+		}
+	}
 	.demand-section {
 		padding-top: 60px;
 		padding-bottom: 100px;
 		background-color: #efefef;
+		overflow: hidden;
 		.demand-header {
 			margin-bottom: 70px;
 			@include fonts.h2();
@@ -285,51 +332,6 @@ body {
 		}
 		.demand-item-text {
 			@include fonts.t2();
-		}
-	}
-	.who-is-section {
-		padding-top: 60px;
-		padding-bottom: 60px;
-		.who-is-wrapper {
-			gap: 32px;
-			align-items: center;
-			.who-is-header {
-				margin-top: 0;
-			}
-			.who-is-text {
-				width: 50%;
-				.who-is-text-item {
-					@include fonts.t2();
-					margin-bottom: 24px;
-				}
-			}
-			.who-is-img-wrapper {
-				width: 50%;
-				> img {
-					width: 100%;
-					max-width: 480px;
-				}
-			}
-			.who-is-tablet-content {
-				display: none;
-			}
-		}
-		.who-is-tablet-text {
-			@include fonts.t1();
-			font-weight: 400;
-			margin-bottom: 0px;
-			margin-top: 30px;
-			border-radius: 8px;
-			padding: 20px 10px;
-			background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
-		}
-		.who-is-btn-wrapper {
-			text-align: center;
-		}
-		.who-is-btn {
-			margin-top: 30px;
-			@include mainButton();
-			color: #ffffff;
 		}
 	}
 	.check-img {
@@ -827,30 +829,6 @@ body {
 				}
 			}
 		}
-		.demand-section {
-			.demand-header {
-				text-align: center;
-				margin-bottom: 40px;
-				font-size: 34px;
-			}
-			.demand-item {
-				flex-direction: column;
-				align-items: center;
-				.demand-item-img-wrapper {
-					width: fit-content;
-					height: auto;
-				}
-			}
-			.demand-text-wrapper {
-				width: 100%;
-				.demand-item-title {
-					text-align: center;
-				}
-			}
-			.demand-img {
-				max-width: 600px;
-			}
-		}
 		.who-is-section {
 			.who-is-wrapper {
 				flex-direction: column;
@@ -874,6 +852,30 @@ body {
 				.who-is-tablet-content {
 					display: block;
 				}
+			}
+		}
+		.demand-section {
+			.demand-header {
+				text-align: center;
+				margin-bottom: 40px;
+				font-size: 34px;
+			}
+			.demand-item {
+				flex-direction: column;
+				align-items: center;
+				.demand-item-img-wrapper {
+					width: fit-content;
+					height: auto;
+				}
+			}
+			.demand-text-wrapper {
+				width: 100%;
+				.demand-item-title {
+					text-align: center;
+				}
+			}
+			.demand-img {
+				max-width: 600px;
 			}
 		}
 		.program-section {
@@ -1052,6 +1054,29 @@ body {
 				}
 			}
 		}
+		.who-is-section {
+			padding-top: 40px;
+			.who-is-header {
+				text-align: left;
+			}
+			.who-is-wrapper {
+				.who-is-text {
+					> p:nth-child(1) {
+						margin-bottom: 32px;
+					}
+					> p:nth-child(2) {
+						margin-bottom: 0;
+					}
+				}
+				.who-is-tablet-text {
+					margin: 0px;
+					@include fonts.t1();
+				}
+			}
+			.who-is-btn {
+				width: 100%;
+			}
+		}
 		.demand-section {
 			padding-top: 24px;
 			padding-bottom: 24px;
@@ -1074,28 +1099,6 @@ body {
 					font-size: 20px;
 					line-height: 24px;
 				}
-			}
-		}
-		.who-is-section {
-			padding-top: 40px;
-			.who-is-header {
-				text-align: left;
-			}
-			.who-is-wrapper {
-				.who-is-text {
-					> p:nth-child(1) {
-						margin-bottom: 32px;
-					}
-					> p:nth-child(2) {
-						margin-bottom: 0;
-					}
-				}
-				.who-is-tablet-text {
-					margin: 0px;
-				}
-			}
-			.who-is-btn {
-				width: 100%;
 			}
 		}
 		.companies-section {

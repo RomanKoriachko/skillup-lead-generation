@@ -348,57 +348,6 @@ body {
     box-shadow: 0 0 15px 5px #4ebd09;
   }
 }
-.main .demand-section {
-  padding-top: 60px;
-  padding-bottom: 100px;
-  background-color: #efefef;
-}
-.main .demand-section .demand-header {
-  margin-bottom: 70px;
-  font-family: "Exo 2";
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 48px;
-}
-.main .demand-section .demand-wrapper {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
-.main .demand-section .demand-item {
-  gap: 32px;
-}
-.main .demand-section .demand-item .demand-item-title {
-  font-family: "Exo 2";
-  font-weight: 800;
-  font-size: 30px;
-  line-height: 130%;
-}
-.main .demand-section .demand-item .demand-item-img-wrapper {
-  width: 45%;
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 6px;
-  border: 3px solid #f0f0f0;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1607843137);
-}
-.main .demand-section .demand-item .demand-img {
-  width: 100%;
-}
-.main .demand-section .demand-item:first-child {
-  margin-bottom: 30px;
-}
-.main .demand-section .demand-item:last-child {
-  justify-content: flex-end;
-}
-.main .demand-section .demand-text-wrapper {
-  width: 40%;
-}
-.main .demand-section .demand-item-text {
-  font-family: "Exo 2";
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-}
 .main .who-is-section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -422,6 +371,7 @@ body {
 }
 .main .who-is-section .who-is-wrapper .who-is-img-wrapper {
   width: 50%;
+  text-align: center;
 }
 .main .who-is-section .who-is-wrapper .who-is-img-wrapper > img {
   width: 100%;
@@ -432,9 +382,9 @@ body {
 }
 .main .who-is-section .who-is-tablet-text {
   font-family: "Exo 2";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
   font-weight: 400;
   margin-bottom: 0px;
   margin-top: 30px;
@@ -485,6 +435,58 @@ body {
   .main .who-is-section .who-is-btn:hover::before {
     box-shadow: 0 0 15px 5px #4ebd09;
   }
+}
+.main .demand-section {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  background-color: #efefef;
+  overflow: hidden;
+}
+.main .demand-section .demand-header {
+  margin-bottom: 70px;
+  font-family: "Exo 2";
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
+}
+.main .demand-section .demand-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.main .demand-section .demand-item {
+  gap: 32px;
+}
+.main .demand-section .demand-item .demand-item-title {
+  font-family: "Exo 2";
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 130%;
+}
+.main .demand-section .demand-item .demand-item-img-wrapper {
+  width: 45%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 6px;
+  border: 3px solid #f0f0f0;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1607843137);
+}
+.main .demand-section .demand-item .demand-img {
+  width: 100%;
+}
+.main .demand-section .demand-item:first-child {
+  margin-bottom: 30px;
+}
+.main .demand-section .demand-item:last-child {
+  justify-content: flex-end;
+}
+.main .demand-section .demand-text-wrapper {
+  width: 40%;
+}
+.main .demand-section .demand-item-text {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
 }
 .main .check-img {
   min-width: 24px;
@@ -1143,29 +1145,6 @@ body {
   .main .introduce-section .introduce-wrapper .introduce-content-center .introduce-content-date > div {
     width: 100%;
   }
-  .main .demand-section .demand-header {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 34px;
-  }
-  .main .demand-section .demand-item {
-    flex-direction: column;
-    align-items: center;
-  }
-  .main .demand-section .demand-item .demand-item-img-wrapper {
-    width: -moz-fit-content;
-    width: fit-content;
-    height: auto;
-  }
-  .main .demand-section .demand-text-wrapper {
-    width: 100%;
-  }
-  .main .demand-section .demand-text-wrapper .demand-item-title {
-    text-align: center;
-  }
-  .main .demand-section .demand-img {
-    max-width: 600px;
-  }
   .main .who-is-section .who-is-wrapper {
     flex-direction: column;
     align-items: center;
@@ -1188,6 +1167,29 @@ body {
   }
   .main .who-is-section .who-is-wrapper .who-is-tablet-content {
     display: block;
+  }
+  .main .demand-section .demand-header {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 34px;
+  }
+  .main .demand-section .demand-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .demand-section .demand-item .demand-item-img-wrapper {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: auto;
+  }
+  .main .demand-section .demand-text-wrapper {
+    width: 100%;
+  }
+  .main .demand-section .demand-text-wrapper .demand-item-title {
+    text-align: center;
+  }
+  .main .demand-section .demand-img {
+    max-width: 600px;
   }
   .main .program-section {
     padding-bottom: 30px;
@@ -1348,6 +1350,28 @@ body {
     line-height: 24px;
     width: 100%;
   }
+  .main .who-is-section {
+    padding-top: 40px;
+  }
+  .main .who-is-section .who-is-header {
+    text-align: left;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(1) {
+    margin-bottom: 32px;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(2) {
+    margin-bottom: 0;
+  }
+  .main .who-is-section .who-is-wrapper .who-is-tablet-text {
+    margin: 0px;
+    font-family: "Exo 2";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .main .who-is-section .who-is-btn {
+    width: 100%;
+  }
   .main .demand-section {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -1369,24 +1393,6 @@ body {
     margin-bottom: 16px;
     font-size: 20px;
     line-height: 24px;
-  }
-  .main .who-is-section {
-    padding-top: 40px;
-  }
-  .main .who-is-section .who-is-header {
-    text-align: left;
-  }
-  .main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(1) {
-    margin-bottom: 32px;
-  }
-  .main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(2) {
-    margin-bottom: 0;
-  }
-  .main .who-is-section .who-is-wrapper .who-is-tablet-text {
-    margin: 0px;
-  }
-  .main .who-is-section .who-is-btn {
-    width: 100%;
   }
   .main .companies-section {
     padding-top: 48px;
