@@ -144,7 +144,6 @@ body {
 .main {
 	.h2-header {
 		@include fonts.h2();
-		margin-top: 104px;
 		margin-bottom: 48px;
 	}
 	.mobile-registration-btn-wrapper {
@@ -322,43 +321,35 @@ body {
 	.salary-section {
 		padding-top: 60px;
 		padding-bottom: 100px;
-		background-color: #efefef;
 		overflow: hidden;
 		.salary-header {
+			text-align: center;
 			margin-bottom: 70px;
 			@include fonts.h2();
 		}
-		.salary-wrapper {
-			display: grid;
-			grid-template-rows: 1fr 1fr;
+		.salary-item-title {
+			@include fonts.h3();
 		}
-		.salary-item {
-			gap: 32px;
-			.salary-item-title {
-				@include fonts.h3();
-			}
-			.salary-item-img-wrapper {
-				width: 45%;
-				height: fit-content;
-				border-radius: 6px;
-				border: 3px solid #f0f0f0;
-				box-shadow: 0px 4px 10px 0px #00000029;
-			}
-			.salary-img {
+		.salary-item-img-wrapper {
+			margin: 0 auto;
+			height: fit-content;
+			border-radius: 6px;
+			border: 3px solid #f0f0f0;
+			box-shadow: 0px 4px 10px 0px #00000029;
+			> img {
 				width: 100%;
-			}
-			&:first-child {
-				margin-bottom: 30px;
-			}
-			&:last-child {
-				justify-content: flex-end;
+				margin-bottom: -4px;
 			}
 		}
-		.salary-text-wrapper {
-			width: 40%;
+		.salary-item-img-wrapper-1 {
+			max-width: 800px;
 		}
-		.salary-item-text {
-			@include fonts.t2();
+		.salary-item-img-wrapper-2 {
+			margin: 30px auto;
+			max-width: 700px;
+		}
+		.salary-item-img-wrapper-3 {
+			max-width: 750px;
 		}
 	}
 	.check-img {
@@ -823,9 +814,7 @@ body {
 	.main {
 		.h2-header {
 			@include fonts.h3();
-			margin-top: 72px;
 			margin-bottom: 32px;
-			text-align: left;
 		}
 		.br {
 			display: block;
@@ -883,26 +872,8 @@ body {
 		}
 		.salary-section {
 			.salary-header {
-				text-align: center;
 				margin-bottom: 40px;
 				font-size: 34px;
-			}
-			.salary-item {
-				flex-direction: column;
-				align-items: center;
-				.salary-item-img-wrapper {
-					width: fit-content;
-					height: auto;
-				}
-			}
-			.salary-text-wrapper {
-				width: 100%;
-				.salary-item-title {
-					text-align: center;
-				}
-			}
-			.salary-img {
-				max-width: 600px;
 			}
 		}
 		.program-section {
@@ -1025,9 +996,6 @@ body {
 	}
 
 	.main {
-		.h2-header {
-			margin-top: 42px;
-		}
 		.mobile-registration-btn-wrapper {
 			display: block;
 			transition: all 0.3s;
@@ -1109,29 +1077,12 @@ body {
 				@include fonts.p1();
 			}
 		}
-
 		.salary-section {
 			padding-top: 24px;
 			padding-bottom: 24px;
-			overflow: hidden;
 			.salary-header {
 				margin-bottom: 32px;
-			}
-			.salary-wrapper {
-				gap: 16px;
-			}
-			.salary-item {
-				gap: 16px;
-			}
-			.salary-img {
-				width: 100%;
-			}
-			.salary-text-wrapper {
-				.salary-item-title {
-					margin-bottom: 16px;
-					font-size: 20px;
-					line-height: 24px;
-				}
+				margin-top: 0;
 			}
 		}
 		.companies-section {
