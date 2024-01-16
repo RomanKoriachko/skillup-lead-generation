@@ -362,6 +362,10 @@ body {
 		padding: 40px 0px;
 		background-color: #efefef;
 		text-align: center;
+		.opportunities-row {
+			align-items: center;
+			gap: 30px;
+		}
 		.opportunities-section-img-wrapper {
 			max-width: 500px;
 			margin: 30px auto;
@@ -371,7 +375,8 @@ body {
 		}
 		.opportunities-subtitle {
 			@include fonts.t1();
-			width: 80%;
+			width: 100%;
+			text-align: left;
 			margin: 0 auto;
 		}
 		.opportunities-wrapper {
@@ -379,7 +384,7 @@ body {
 			padding: 20px 30px;
 			background-color: white;
 			width: fit-content;
-			margin: 30px auto;
+			margin: 30px 0px;
 			box-shadow: 0px 4px 10px 0px #00000029;
 			@include fonts.p2();
 		}
@@ -459,6 +464,14 @@ body {
 					}
 				}
 			}
+		}
+	}
+	.sign-up-section {
+		padding: 48px 0px;
+		text-align: center;
+		background: #0d1a30;
+		.sign-up-btn {
+			@include mainButton();
 		}
 	}
 	// .companies-section {
@@ -637,43 +650,35 @@ body {
 			}
 		}
 	}
-	.sign-up-section {
-		padding: 48px 0px;
-		text-align: center;
-		background: #0d1a30;
-		.sign-up-btn {
-			@include mainButton();
-		}
-	}
-	.plan-section {
-		padding: 60px 0px;
-		text-align: center;
-		.plan-title {
-			font-style: italic;
-			margin-bottom: 10px;
-		}
-		.plan-subtitle {
-			@include fonts.p2();
-		}
-		.plan-wrapper {
-			padding: 20px 16px;
-			margin: 60px auto;
-			margin-bottom: 0;
-			background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
-			border-radius: 6px;
-			width: 60%;
-			.plan-wrapper-text-1 {
-				@include fonts.t2();
-			}
-			.plan-wrapper-text-2 {
-				margin-top: 16px;
-				@include fonts.p2();
-			}
-		}
-		.plan-btn {
-			@include mainButton();
-		}
-	}
+	// .plan-section {
+	// 	padding: 60px 0px;
+	// 	text-align: center;
+	// 	.plan-title {
+	// 		font-style: italic;
+	// 		margin-bottom: 10px;
+	// 	}
+	// 	.plan-subtitle {
+	// 		@include fonts.p2();
+	// 	}
+	// 	.plan-wrapper {
+	// 		padding: 20px 16px;
+	// 		margin: 60px auto;
+	// 		margin-bottom: 0;
+	// 		background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
+	// 		border-radius: 6px;
+	// 		width: 60%;
+	// 		.plan-wrapper-text-1 {
+	// 			@include fonts.t2();
+	// 		}
+	// 		.plan-wrapper-text-2 {
+	// 			margin-top: 16px;
+	// 			@include fonts.p2();
+	// 		}
+	// 	}
+	// 	.plan-btn {
+	// 		@include mainButton();
+	// 	}
+	// }
 	// .benefits-section {
 	// 	padding-top: 100px;
 	// 	padding-bottom: 80px;
@@ -703,26 +708,36 @@ body {
 		color: #ffffff;
 		padding: 48px 0px;
 		.form-section-wrapper {
-			align-items: center;
 			justify-content: center;
+			align-items: flex-start;
 			gap: 32px;
 			.form-section-text {
 				width: 50%;
-				> p:nth-child(1) {
-					@include fonts.h2();
-					margin-bottom: 32px;
+				.plan-title {
+					font-style: italic;
+					margin-bottom: 16px;
 				}
-				> p:nth-child(2) {
+				.plan-subtitle {
 					@include fonts.p2();
-					margin-bottom: 32px;
 				}
-				> p:nth-child(3) {
-					@include fonts.p2();
-					color: #4ebd09;
-				}
-				.form-section-text-hide-tablet {
-					span {
-						color: #4ebd09;
+				.plan-wrapper {
+					text-align: center;
+					padding: 20px 16px;
+					margin: 40px auto;
+					margin-bottom: 0;
+					background: linear-gradient(
+						147.71deg,
+						#f0f5e0 20.89%,
+						#e0f5e3 80.64%
+					);
+					border-radius: 6px;
+					color: #0d1a30;
+					.plan-wrapper-text-1 {
+						@include fonts.t2();
+					}
+					.plan-wrapper-text-2 {
+						margin-top: 16px;
+						@include fonts.p2();
 					}
 				}
 			}
@@ -762,6 +777,23 @@ body {
 					@include mainButton();
 					margin-top: 24px;
 					color: #ffffff;
+				}
+			}
+			.plan-wrapper-mobile {
+				display: none;
+				text-align: center;
+				padding: 20px 16px;
+				margin: 40px auto;
+				margin-bottom: 0;
+				background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
+				border-radius: 6px;
+				color: #0d1a30;
+				.plan-wrapper-text-1 {
+					@include fonts.t2();
+				}
+				.plan-wrapper-text-2 {
+					margin-top: 16px;
+					@include fonts.p2();
 				}
 			}
 		}
@@ -935,6 +967,9 @@ body {
 			}
 		}
 		.opportunities-section {
+			.opportunities-row {
+				flex-direction: column-reverse;
+			}
 			.opportunities-subtitle {
 				width: 100%;
 			}
@@ -998,11 +1033,11 @@ body {
 				}
 			}
 		}
-		.plan-section {
-			.plan-wrapper {
-				width: 80%;
-			}
-		}
+		// .plan-section {
+		// 	.plan-wrapper {
+		// 		width: 80%;
+		// 	}
+		// }
 		// .benefits-section {
 		// 	padding-bottom: 48px;
 		// 	.benefits-wrapper {
@@ -1015,14 +1050,12 @@ body {
 		.form-section {
 			.form-section-wrapper {
 				flex-direction: column;
+				align-items: center;
 				.form-section-text {
 					width: 100%;
+					text-align: center;
 					.form-section-text-hide-tablet {
 						display: none;
-					}
-					> p:nth-child(1) {
-						@include fonts.p2();
-						margin-bottom: 32px;
 					}
 				}
 				.form {
@@ -1176,6 +1209,12 @@ body {
 				}
 			}
 		}
+		.sign-up-section {
+			button {
+				width: 100%;
+				@include fonts.b2();
+			}
+		}
 		// .companies-section {
 		// 	padding-top: 48px;
 		// 	padding-bottom: 48px;
@@ -1198,19 +1237,13 @@ body {
 				font-size: 26px;
 			}
 		}
-		.plan-section {
-			padding: 30px 0px;
-			.plan-wrapper {
-				width: 100%;
-				margin-top: 24px;
-			}
-		}
-		.sign-up-section {
-			button {
-				width: 100%;
-				@include fonts.b2();
-			}
-		}
+		// .plan-section {
+		// 	padding: 30px 0px;
+		// 	.plan-wrapper {
+		// 		width: 100%;
+		// 		margin-top: 24px;
+		// 	}
+		// }
 		// .benefits-section {
 		// 	padding-top: 40px;
 		// 	.benefits-footer {
@@ -1220,6 +1253,9 @@ body {
 		.form-section {
 			.form-section-wrapper {
 				gap: 24px;
+				.plan-wrapper {
+					display: none;
+				}
 				.form {
 					width: 100%;
 					background: transparent;
@@ -1229,6 +1265,9 @@ body {
 						@include fonts.b2();
 						color: #0d1a30;
 					}
+				}
+				.plan-wrapper-mobile {
+					display: block;
 				}
 			}
 		}

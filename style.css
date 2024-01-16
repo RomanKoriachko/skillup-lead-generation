@@ -521,6 +521,10 @@ body {
   background-color: #efefef;
   text-align: center;
 }
+.main .opportunities-section .opportunities-row {
+  align-items: center;
+  gap: 30px;
+}
 .main .opportunities-section .opportunities-section-img-wrapper {
   max-width: 500px;
   margin: 30px auto;
@@ -533,7 +537,8 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  width: 80%;
+  width: 100%;
+  text-align: left;
   margin: 0 auto;
 }
 .main .opportunities-section .opportunities-wrapper {
@@ -542,7 +547,7 @@ body {
   background-color: white;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 30px auto;
+  margin: 30px 0px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1607843137);
   font-family: "Exo 2";
   font-weight: 600;
@@ -675,6 +680,50 @@ body {
   font-size: 18px;
   line-height: 24px;
 }
+.main .sign-up-section {
+  padding: 48px 0px;
+  text-align: center;
+  background: #0d1a30;
+}
+.main .sign-up-section .sign-up-btn {
+  width: 430px;
+  min-height: 50px;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background: #4ebd09;
+  border: none;
+  padding: 14px 15px;
+  border-radius: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s, ease;
+}
+@media (max-width: 750px) {
+  .main .sign-up-section .sign-up-btn {
+    width: 100%;
+  }
+}
+@media (hover: hover) {
+  .main .sign-up-section .sign-up-btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 1s ease;
+  }
+  .main .sign-up-section .sign-up-btn:hover::before {
+    box-shadow: 0 0 15px 5px #4ebd09;
+  }
+}
 .main .numbers-section {
   padding-top: 100px;
   padding-bottom: 104px;
@@ -746,160 +795,50 @@ body {
 .main .numbers-section .numbers-comparison .numbers-comparison-item:first-child {
   border: none;
 }
-.main .sign-up-section {
-  padding: 48px 0px;
-  text-align: center;
-  background: #0d1a30;
-}
-.main .sign-up-section .sign-up-btn {
-  width: 430px;
-  min-height: 50px;
-  font-family: "Exo 2";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  background: #4ebd09;
-  border: none;
-  padding: 14px 15px;
-  border-radius: 6px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  cursor: pointer;
-  color: #fff;
-  position: relative;
-  transition: all 0.3s, ease;
-}
-@media (max-width: 750px) {
-  .main .sign-up-section .sign-up-btn {
-    width: 100%;
-  }
-}
-@media (hover: hover) {
-  .main .sign-up-section .sign-up-btn::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    inset: 0;
-    position: absolute;
-    background-color: transparent;
-    border-radius: 10px;
-    transition: all 1s ease;
-  }
-  .main .sign-up-section .sign-up-btn:hover::before {
-    box-shadow: 0 0 15px 5px #4ebd09;
-  }
-}
-.main .plan-section {
-  padding: 60px 0px;
-  text-align: center;
-}
-.main .plan-section .plan-title {
-  font-style: italic;
-  margin-bottom: 10px;
-}
-.main .plan-section .plan-subtitle {
-  font-family: "Exo 2";
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-}
-.main .plan-section .plan-wrapper {
-  padding: 20px 16px;
-  margin: 60px auto;
-  margin-bottom: 0;
-  background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
-  border-radius: 6px;
-  width: 60%;
-}
-.main .plan-section .plan-wrapper .plan-wrapper-text-1 {
-  font-family: "Exo 2";
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-}
-.main .plan-section .plan-wrapper .plan-wrapper-text-2 {
-  margin-top: 16px;
-  font-family: "Exo 2";
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-}
-.main .plan-section .plan-btn {
-  width: 430px;
-  min-height: 50px;
-  font-family: "Exo 2";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  background: #4ebd09;
-  border: none;
-  padding: 14px 15px;
-  border-radius: 6px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  cursor: pointer;
-  color: #fff;
-  position: relative;
-  transition: all 0.3s, ease;
-}
-@media (max-width: 750px) {
-  .main .plan-section .plan-btn {
-    width: 100%;
-  }
-}
-@media (hover: hover) {
-  .main .plan-section .plan-btn::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    inset: 0;
-    position: absolute;
-    background-color: transparent;
-    border-radius: 10px;
-    transition: all 1s ease;
-  }
-  .main .plan-section .plan-btn:hover::before {
-    box-shadow: 0 0 15px 5px #4ebd09;
-  }
-}
 .main .form-section {
   background: #0d1a30;
   color: #ffffff;
   padding: 48px 0px;
 }
 .main .form-section .form-section-wrapper {
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
   gap: 32px;
 }
 .main .form-section .form-section-wrapper .form-section-text {
   width: 50%;
 }
-.main .form-section .form-section-wrapper .form-section-text > p:nth-child(1) {
-  font-family: "Exo 2";
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 48px;
-  margin-bottom: 32px;
+.main .form-section .form-section-wrapper .form-section-text .plan-title {
+  font-style: italic;
+  margin-bottom: 16px;
 }
-.main .form-section .form-section-wrapper .form-section-text > p:nth-child(2) {
+.main .form-section .form-section-wrapper .form-section-text .plan-subtitle {
   font-family: "Exo 2";
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  margin-bottom: 32px;
 }
-.main .form-section .form-section-wrapper .form-section-text > p:nth-child(3) {
+.main .form-section .form-section-wrapper .form-section-text .plan-wrapper {
+  text-align: center;
+  padding: 20px 16px;
+  margin: 40px auto;
+  margin-bottom: 0;
+  background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
+  border-radius: 6px;
+  color: #0d1a30;
+}
+.main .form-section .form-section-wrapper .form-section-text .plan-wrapper .plan-wrapper-text-1 {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.main .form-section .form-section-wrapper .form-section-text .plan-wrapper .plan-wrapper-text-2 {
+  margin-top: 16px;
   font-family: "Exo 2";
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
-  color: #4ebd09;
-}
-.main .form-section .form-section-wrapper .form-section-text .form-section-text-hide-tablet span {
-  color: #4ebd09;
 }
 .main .form-section .form-section-wrapper .form {
   width: 50%;
@@ -980,6 +919,29 @@ body {
   .main .form-section .form-section-wrapper .form button:hover::before {
     box-shadow: 0 0 15px 5px #4ebd09;
   }
+}
+.main .form-section .form-section-wrapper .plan-wrapper-mobile {
+  display: none;
+  text-align: center;
+  padding: 20px 16px;
+  margin: 40px auto;
+  margin-bottom: 0;
+  background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
+  border-radius: 6px;
+  color: #0d1a30;
+}
+.main .form-section .form-section-wrapper .plan-wrapper-mobile .plan-wrapper-text-1 {
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.main .form-section .form-section-wrapper .plan-wrapper-mobile .plan-wrapper-text-2 {
+  margin-top: 16px;
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .footer {
@@ -1160,6 +1122,9 @@ body {
     margin-bottom: 40px;
     font-size: 34px;
   }
+  .main .opportunities-section .opportunities-row {
+    flex-direction: column-reverse;
+  }
   .main .opportunities-section .opportunities-subtitle {
     width: 100%;
   }
@@ -1208,24 +1173,16 @@ body {
   .main .numbers-section .numbers-row .numbers-item {
     width: 75%;
   }
-  .main .plan-section .plan-wrapper {
-    width: 80%;
-  }
   .main .form-section .form-section-wrapper {
     flex-direction: column;
+    align-items: center;
   }
   .main .form-section .form-section-wrapper .form-section-text {
     width: 100%;
+    text-align: center;
   }
   .main .form-section .form-section-wrapper .form-section-text .form-section-text-hide-tablet {
     display: none;
-  }
-  .main .form-section .form-section-wrapper .form-section-text > p:nth-child(1) {
-    font-family: "Exo 2";
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 32px;
   }
   .main .form-section .form-section-wrapper .form {
     width: 70%;
@@ -1357,16 +1314,6 @@ body {
   .main .coach-section .coach-section-content .coach-name {
     margin-bottom: 18px;
   }
-  .main .numbers-section .numbers-header {
-    font-size: 26px;
-  }
-  .main .plan-section {
-    padding: 30px 0px;
-  }
-  .main .plan-section .plan-wrapper {
-    width: 100%;
-    margin-top: 24px;
-  }
   .main .sign-up-section button {
     width: 100%;
     font-family: "Exo 2";
@@ -1374,8 +1321,14 @@ body {
     font-size: 16px;
     line-height: 24px;
   }
+  .main .numbers-section .numbers-header {
+    font-size: 26px;
+  }
   .main .form-section .form-section-wrapper {
     gap: 24px;
+  }
+  .main .form-section .form-section-wrapper .plan-wrapper {
+    display: none;
   }
   .main .form-section .form-section-wrapper .form {
     width: 100%;
@@ -1389,6 +1342,9 @@ body {
     font-size: 16px;
     line-height: 24px;
     color: #0d1a30;
+  }
+  .main .form-section .form-section-wrapper .plan-wrapper-mobile {
+    display: block;
   }
   .footer .footer-btn {
     width: 100%;
