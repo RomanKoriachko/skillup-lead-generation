@@ -293,31 +293,58 @@ body {
 		}
 	}
 	.demand-section {
+		padding: 60px 0px;
+		background-color: #efefef;
+		text-align: center;
+		.demand-section-title {
+			@include fonts.h2();
+			margin-bottom: 16px;
+		}
+		.demand-section-subtitle {
+			@include fonts.t1();
+			margin-bottom: 26px;
+		}
+		.demand-section-img-wrapper {
+			margin: 0 auto;
+			border-radius: 6px;
+			border: 3px solid #f0f0f0;
+			box-shadow: 0px 4px 10px 0px #00000029;
+			max-width: 900px;
+		}
+		.demand-section-img {
+			width: 100%;
+		}
+		.img-wrapper-2 {
+			margin-top: 30px;
+			max-width: 770px;
+		}
+	}
+	.salary-section {
 		padding-top: 60px;
 		padding-bottom: 100px;
 		background-color: #efefef;
 		overflow: hidden;
-		.demand-header {
+		.salary-header {
 			margin-bottom: 70px;
 			@include fonts.h2();
 		}
-		.demand-wrapper {
+		.salary-wrapper {
 			display: grid;
 			grid-template-rows: 1fr 1fr;
 		}
-		.demand-item {
+		.salary-item {
 			gap: 32px;
-			.demand-item-title {
+			.salary-item-title {
 				@include fonts.h3();
 			}
-			.demand-item-img-wrapper {
+			.salary-item-img-wrapper {
 				width: 45%;
 				height: fit-content;
 				border-radius: 6px;
 				border: 3px solid #f0f0f0;
 				box-shadow: 0px 4px 10px 0px #00000029;
 			}
-			.demand-img {
+			.salary-img {
 				width: 100%;
 			}
 			&:first-child {
@@ -327,10 +354,10 @@ body {
 				justify-content: flex-end;
 			}
 		}
-		.demand-text-wrapper {
+		.salary-text-wrapper {
 			width: 40%;
 		}
-		.demand-item-text {
+		.salary-item-text {
 			@include fonts.t2();
 		}
 	}
@@ -854,27 +881,27 @@ body {
 				}
 			}
 		}
-		.demand-section {
-			.demand-header {
+		.salary-section {
+			.salary-header {
 				text-align: center;
 				margin-bottom: 40px;
 				font-size: 34px;
 			}
-			.demand-item {
+			.salary-item {
 				flex-direction: column;
 				align-items: center;
-				.demand-item-img-wrapper {
+				.salary-item-img-wrapper {
 					width: fit-content;
 					height: auto;
 				}
 			}
-			.demand-text-wrapper {
+			.salary-text-wrapper {
 				width: 100%;
-				.demand-item-title {
+				.salary-item-title {
 					text-align: center;
 				}
 			}
-			.demand-img {
+			.salary-img {
 				max-width: 600px;
 			}
 		}
@@ -1078,23 +1105,29 @@ body {
 			}
 		}
 		.demand-section {
+			.demand-section-title {
+				@include fonts.p1();
+			}
+		}
+
+		.salary-section {
 			padding-top: 24px;
 			padding-bottom: 24px;
 			overflow: hidden;
-			.demand-header {
+			.salary-header {
 				margin-bottom: 32px;
 			}
-			.demand-wrapper {
+			.salary-wrapper {
 				gap: 16px;
 			}
-			.demand-item {
+			.salary-item {
 				gap: 16px;
 			}
-			.demand-img {
+			.salary-img {
 				width: 100%;
 			}
-			.demand-text-wrapper {
-				.demand-item-title {
+			.salary-text-wrapper {
+				.salary-item-title {
 					margin-bottom: 16px;
 					font-size: 20px;
 					line-height: 24px;

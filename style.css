@@ -437,32 +437,65 @@ body {
   }
 }
 .main .demand-section {
+  padding: 60px 0px;
+  background-color: #efefef;
+  text-align: center;
+}
+.main .demand-section .demand-section-title {
+  font-family: "Exo 2";
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 16px;
+}
+.main .demand-section .demand-section-subtitle {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 26px;
+}
+.main .demand-section .demand-section-img-wrapper {
+  margin: 0 auto;
+  border-radius: 6px;
+  border: 3px solid #f0f0f0;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1607843137);
+  max-width: 900px;
+}
+.main .demand-section .demand-section-img {
+  width: 100%;
+}
+.main .demand-section .img-wrapper-2 {
+  margin-top: 30px;
+  max-width: 770px;
+}
+.main .salary-section {
   padding-top: 60px;
   padding-bottom: 100px;
   background-color: #efefef;
   overflow: hidden;
 }
-.main .demand-section .demand-header {
+.main .salary-section .salary-header {
   margin-bottom: 70px;
   font-family: "Exo 2";
   font-weight: 800;
   font-size: 36px;
   line-height: 48px;
 }
-.main .demand-section .demand-wrapper {
+.main .salary-section .salary-wrapper {
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
-.main .demand-section .demand-item {
+.main .salary-section .salary-item {
   gap: 32px;
 }
-.main .demand-section .demand-item .demand-item-title {
+.main .salary-section .salary-item .salary-item-title {
   font-family: "Exo 2";
   font-weight: 800;
   font-size: 30px;
   line-height: 130%;
 }
-.main .demand-section .demand-item .demand-item-img-wrapper {
+.main .salary-section .salary-item .salary-item-img-wrapper {
   width: 45%;
   height: -moz-fit-content;
   height: fit-content;
@@ -470,19 +503,19 @@ body {
   border: 3px solid #f0f0f0;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1607843137);
 }
-.main .demand-section .demand-item .demand-img {
+.main .salary-section .salary-item .salary-img {
   width: 100%;
 }
-.main .demand-section .demand-item:first-child {
+.main .salary-section .salary-item:first-child {
   margin-bottom: 30px;
 }
-.main .demand-section .demand-item:last-child {
+.main .salary-section .salary-item:last-child {
   justify-content: flex-end;
 }
-.main .demand-section .demand-text-wrapper {
+.main .salary-section .salary-text-wrapper {
   width: 40%;
 }
-.main .demand-section .demand-item-text {
+.main .salary-section .salary-item-text {
   font-family: "Exo 2";
   font-weight: 500;
   font-size: 18px;
@@ -1168,27 +1201,27 @@ body {
   .main .who-is-section .who-is-wrapper .who-is-tablet-content {
     display: block;
   }
-  .main .demand-section .demand-header {
+  .main .salary-section .salary-header {
     text-align: center;
     margin-bottom: 40px;
     font-size: 34px;
   }
-  .main .demand-section .demand-item {
+  .main .salary-section .salary-item {
     flex-direction: column;
     align-items: center;
   }
-  .main .demand-section .demand-item .demand-item-img-wrapper {
+  .main .salary-section .salary-item .salary-item-img-wrapper {
     width: -moz-fit-content;
     width: fit-content;
     height: auto;
   }
-  .main .demand-section .demand-text-wrapper {
+  .main .salary-section .salary-text-wrapper {
     width: 100%;
   }
-  .main .demand-section .demand-text-wrapper .demand-item-title {
+  .main .salary-section .salary-text-wrapper .salary-item-title {
     text-align: center;
   }
-  .main .demand-section .demand-img {
+  .main .salary-section .salary-img {
     max-width: 600px;
   }
   .main .program-section {
@@ -1372,24 +1405,30 @@ body {
   .main .who-is-section .who-is-btn {
     width: 100%;
   }
-  .main .demand-section {
+  .main .demand-section .demand-section-title {
+    font-family: "Exo 2";
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .main .salary-section {
     padding-top: 24px;
     padding-bottom: 24px;
     overflow: hidden;
   }
-  .main .demand-section .demand-header {
+  .main .salary-section .salary-header {
     margin-bottom: 32px;
   }
-  .main .demand-section .demand-wrapper {
+  .main .salary-section .salary-wrapper {
     gap: 16px;
   }
-  .main .demand-section .demand-item {
+  .main .salary-section .salary-item {
     gap: 16px;
   }
-  .main .demand-section .demand-img {
+  .main .salary-section .salary-img {
     width: 100%;
   }
-  .main .demand-section .demand-text-wrapper .demand-item-title {
+  .main .salary-section .salary-text-wrapper .salary-item-title {
     margin-bottom: 16px;
     font-size: 20px;
     line-height: 24px;
