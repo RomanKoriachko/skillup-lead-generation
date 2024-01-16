@@ -186,6 +186,7 @@ body {
 		}
 		.introduce-wrapper {
 			position: relative;
+			text-align: center;
 			z-index: 10;
 			.introduce-content-title {
 				@include fonts.h1();
@@ -193,7 +194,7 @@ body {
 				margin-top: 36px;
 				margin-bottom: 80px;
 				text-transform: uppercase;
-				width: 75%;
+				width: 100%;
 				> span {
 					white-space: nowrap;
 				}
@@ -219,8 +220,11 @@ body {
 			}
 			.introduce-content-center {
 				text-align: center;
-				width: 60%;
 				margin: 0 auto;
+				.introduce-content-subtitle {
+					width: 80%;
+					margin: 0 auto;
+				}
 				.introduce-content-date {
 					@include fonts.h3();
 					margin-top: 40px;
@@ -229,7 +233,10 @@ body {
 					color: #0d1a30;
 					padding: 32px;
 					border-radius: 12px;
-					> span {
+					> div {
+						width: 50%;
+					}
+					span {
 						color: #4ebd09;
 					}
 				}
@@ -743,9 +750,6 @@ body {
 				.introduce-content-title {
 					font-size: 52px;
 				}
-				.introduce-content-center {
-					width: 75%;
-				}
 			}
 		}
 		.benefit-section {
@@ -813,7 +817,13 @@ body {
 					margin-bottom: 36px;
 				}
 				.introduce-content-center {
-					width: 100%;
+					.introduce-content-date {
+						flex-direction: column;
+						align-items: center;
+						> div {
+							width: 100%;
+						}
+					}
 				}
 			}
 		}
@@ -1018,11 +1028,16 @@ body {
 			.introduce-wrapper {
 				.introduce-content {
 					.introduce-content-subtitle {
-						font-size: 21px;
+						font-size: 18px;
 					}
 					.introduce-content-title {
 						font-size: 32px;
 						margin-top: 16px;
+					}
+					.introduce-content-center {
+						.introduce-content-subtitle {
+							width: 100%;
+						}
 					}
 					.introduce-content-date {
 						@include fonts.p2();

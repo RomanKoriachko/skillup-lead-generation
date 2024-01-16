@@ -25,23 +25,11 @@ if (window.screen.height > 1100) {
 	}
 }
 
-let aboutRecruterBtn = document.querySelectorAll('.header-menu-item-1');
-let programBtn = document.querySelectorAll('.header-menu-item-2');
-let coachBtn = document.querySelectorAll('.header-menu-item-3');
+let programBtn = document.querySelectorAll('.header-menu-item-program');
+let coachBtn = document.querySelectorAll('.header-menu-item-coach');
 
-let aboutRecruterSection = document.querySelector('.who-is-section');
 let programSection = document.querySelector('.program-section');
 let coachSection = document.querySelector('.coach-section');
-
-for (let i = 0; i < aboutRecruterBtn.length; i++) {
-	aboutRecruterBtn[i].addEventListener('click', () => {
-		window.scrollTo({
-			top:
-				aboutRecruterSection.getBoundingClientRect().top + window.scrollY - 100,
-			behavior: 'smooth',
-		});
-	});
-}
 
 for (let i = 0; i < programBtn.length; i++) {
 	programBtn[i].addEventListener('click', () => {

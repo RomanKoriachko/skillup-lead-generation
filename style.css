@@ -244,6 +244,7 @@ body {
 }
 .main .introduce-section .introduce-wrapper {
   position: relative;
+  text-align: center;
   z-index: 10;
 }
 .main .introduce-section .introduce-wrapper .introduce-content-title {
@@ -255,7 +256,7 @@ body {
   margin-top: 36px;
   margin-bottom: 80px;
   text-transform: uppercase;
-  width: 75%;
+  width: 100%;
 }
 .main .introduce-section .introduce-wrapper .introduce-content-title > span {
   white-space: nowrap;
@@ -284,7 +285,10 @@ body {
 }
 .main .introduce-section .introduce-wrapper .introduce-content-center {
   text-align: center;
-  width: 60%;
+  margin: 0 auto;
+}
+.main .introduce-section .introduce-wrapper .introduce-content-center .introduce-content-subtitle {
+  width: 80%;
   margin: 0 auto;
 }
 .main .introduce-section .introduce-wrapper .introduce-content-center .introduce-content-date {
@@ -299,7 +303,10 @@ body {
   padding: 32px;
   border-radius: 12px;
 }
-.main .introduce-section .introduce-wrapper .introduce-content-center .introduce-content-date > span {
+.main .introduce-section .introduce-wrapper .introduce-content-center .introduce-content-date > div {
+  width: 50%;
+}
+.main .introduce-section .introduce-wrapper .introduce-content-center .introduce-content-date span {
   color: #4ebd09;
 }
 .main .introduce-section .introduce-wrapper button {
@@ -1074,9 +1081,6 @@ body {
   .main .introduce-section .introduce-wrapper .introduce-content-title {
     font-size: 52px;
   }
-  .main .introduce-section .introduce-wrapper .introduce-content-center {
-    width: 75%;
-  }
   .main .benefit-section .benefit-wrapper .benefit-item {
     padding: 0px 5px;
   }
@@ -1132,7 +1136,11 @@ body {
     width: 100%;
     margin-bottom: 36px;
   }
-  .main .introduce-section .introduce-wrapper .introduce-content-center {
+  .main .introduce-section .introduce-wrapper .introduce-content-center .introduce-content-date {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content-center .introduce-content-date > div {
     width: 100%;
   }
   .main .demand-section .demand-header {
@@ -1315,11 +1323,14 @@ body {
     height: 60px;
   }
   .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-subtitle {
-    font-size: 21px;
+    font-size: 18px;
   }
   .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-title {
     font-size: 32px;
     margin-top: 16px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-center .introduce-content-subtitle {
+    width: 100%;
   }
   .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-date {
     font-family: "Exo 2";
