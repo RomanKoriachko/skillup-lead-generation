@@ -57,6 +57,12 @@ body {
 	color: #0d1a30;
 	font-family: 'Exo 2';
 }
+.check-img {
+	min-width: 24px;
+	height: 24px;
+	background-image: url(images/check-2-img.svg);
+	margin-right: 8px;
+}
 
 // Desktop
 
@@ -352,21 +358,33 @@ body {
 			max-width: 750px;
 		}
 	}
-	.check-img {
-		min-width: 24px;
-		height: 24px;
-		background-image: url(images/check-circle.svg);
-		margin-right: 8px;
+	.opportunities-section {
+		padding: 40px 0px;
+		background-color: #efefef;
+		text-align: center;
+		.opportunities-subtitle {
+			@include fonts.t1();
+			width: 80%;
+			margin: 0 auto;
+		}
+		.opportunities-wrapper {
+			border-radius: 6px;
+			padding: 20px 30px;
+			background-color: white;
+			width: fit-content;
+			margin: 30px auto;
+			box-shadow: 0px 4px 10px 0px #00000029;
+			@include fonts.p2();
+		}
+		.opportunities-btn {
+			@include mainButton();
+		}
 	}
 	.program-section {
 		padding-top: 40px;
 		padding-bottom: 80px;
-		background-color: #efefef;
 		.program-section-header {
 			margin-top: 0;
-		}
-		.check-img {
-			background-image: url(images/check-2-img.svg);
 		}
 		.program-section-header {
 			text-align: center;
@@ -876,6 +894,14 @@ body {
 				font-size: 34px;
 			}
 		}
+		.opportunities-section {
+			.opportunities-subtitle {
+				width: 100%;
+			}
+			.opportunities-wrapper {
+				width: 100%;
+			}
+		}
 		.program-section {
 			padding-bottom: 30px;
 			.program-section-header {
@@ -1083,6 +1109,11 @@ body {
 			.salary-header {
 				margin-bottom: 32px;
 				margin-top: 0;
+			}
+		}
+		.opportunities-section {
+			.opportunities-wrapper {
+				font-size: 21px;
 			}
 		}
 		.companies-section {
