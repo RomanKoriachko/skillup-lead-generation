@@ -1,0 +1,69 @@
+@mixin h1() {
+    font-family: 'Exo 2';
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 124%;
+}
+@mixin h2() {
+    font-family: 'Exo 2';
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 48px;
+}
+@mixin h3() {
+    font-family: 'Exo 2';
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 130%;
+}
+
+@mixin p1() {
+    font-family: 'Exo 2';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+@mixin p2() {
+    font-family: 'Exo 2';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin t1() {
+    font-family: 'Exo 2';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+@mixin t2() {
+    font-family: 'Exo 2';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+@mixin t3() {
+    font-family: 'Exo 2';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 132%;
+}
+@mixin t4() {
+    font-family: 'Exo 2';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 124%;
+}
+
+@mixin b1() {
+    font-family: 'Exo 2';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+}
+@mixin b2() {
+    font-family: 'Exo 2';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}

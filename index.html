@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SkillUp</title>
+		<link rel="shortcun icon" href="skillup_favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"
+		/>
+
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"
+		></script>
+
+		<script
+			defer
+			type="text/javascript"
+			src="//code.jquery.com/jquery-1.11.0.min.js"
+		></script>
+		<script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script defer type="text/javascript" src="slick/slick.min.js"></script>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+		></script>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+		></script>
+		<script
+			defer
+			src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"
+			type="text/javascript"
+		></script>
+
+		<script defer src="app.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header-row">
+					<div class="logo">
+						<img src="images/logo-img.svg" alt="" />
+					</div>
+					<div class="header-menu row">
+						<div class="header-menu-item header-menu-item-1">
+							Хто такий рекрутер?
+						</div>
+						<div class="header-menu-item header-menu-item-2">Програма</div>
+						<div class="header-menu-item header-menu-item-3">Хто проводить</div>
+					</div>
+					<button class="header-btn main-btn">Зареєструватись</button>
+					<div class="burger-menu-btn"></div>
+				</div>
+			</div>
+			<div class="burger-menu-content">
+				<div class="burger-menu-item header-menu-item-1">
+					Хто такий рекрутер?
+				</div>
+				<div class="burger-menu-item header-menu-item-2">Програма</div>
+				<div class="burger-menu-item header-menu-item-3">Хто проводить</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="mobile-registration-btn-wrapper hide">
+				<button class="main-btn">Записатись на безкоштовний вебінар</button>
+			</div>
+			<section class="introduce-section">
+				<div class="introduce-section-bg"></div>
+				<div class="container">
+					<div class="introduce-wrapper">
+						<div class="introduce-content">
+							<div class="introduce-content-subtitle upper-case row">
+								<p>Старт в IT для українців у США</p>
+								<div class="heart-img"></div>
+							</div>
+							<p class="introduce-content-title">
+								Безкоштовний вебінар <span>«Рекрутинг в IT»</span>
+							</p>
+							<div class="introduce-content-center">
+								<p class="introduce-content-subtitle">
+									Дізнайтеся як опанувати професію рекрутера
+								</p>
+								<p class="introduce-content-subtitle">
+									та знайти роботу в IT-компанії в CША з ЗП
+									<span>від $80 000/рік</span>
+								</p>
+								<div class="introduce-content-date">
+									<span>XX</span> січня <span>XX:XX</span> (GMT-4) за Нью-Йорком
+								</div>
+								<button class="main-btn">Зареєструватись безкоштовно</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="demand-section">
+				<div class="container">
+					<p class="demand-header">Скільки заробляє рекрутер в США?</p>
+					<div class="demand-wrapper">
+						<div
+							data-aos="fade-right"
+							data-aos-once="true"
+							class="demand-item row"
+						>
+							<div class="demand-item-img-wrapper">
+								<img
+									class="demand-img"
+									src="images/demand-img-1.png"
+									alt="demand-img-1"
+								/>
+							</div>
+							<div class="demand-text-wrapper">
+								<p class="demand-item-title">ЗП вище середнього по Штатам</p>
+								<p class="demand-item-text">
+									Рекрутери заробляють, в середньому, $80,000 на рік. Заробітна
+									плата фахівців з 3+ роками досвіду досягає $190,000
+								</p>
+							</div>
+						</div>
+						<div
+							data-aos="fade-left"
+							data-aos-once="true"
+							class="demand-item row"
+						>
+							<div class="demand-item-img-wrapper">
+								<img
+									class="demand-img"
+									src="images/demand-img-2.png"
+									alt="demand-img-2"
+								/>
+							</div>
+							<div class="demand-text-wrapper">
+								<p class="demand-item-title">
+									ТОПові світові компанії регулярно шукають рекрутерів
+								</p>
+								<p class="demand-item-text">
+									Ця позиція завжди є супер-затребуваною та життєво важливою для
+									будь-якої компанії, що прагне розвиватися
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="who-is-section">
+				<div class="container">
+					<div class="row who-is-wrapper">
+						<div class="who-is-text">
+							<p class="who-is-header h2-header">Хто такий IT рекрутер?</p>
+							<p class="who-is-text-item">
+								Це фахівець, який здійснює пошук, професійний відбір та наймає
+								на роботу IT спеціалістів.
+							</p>
+							<p class="who-is-text-item">
+								Він займається також пошуком кандидатів. Це багатозадачний
+								спеціаліст, який знає, де шукати розробників (в яких соцмережах,
+								на яких ресурсах), як з ними спілкуватися і зацікавити в новій
+								посаді.
+							</p>
+							<p class="who-is-tablet-text who-is-desktop-content">
+								Рекрутер також організовує всі етапи співбесід, проведення
+								тестування і разом з технічним спеціалістом надає фідбек по
+								кожному кандидату.
+							</p>
+						</div>
+						<div class="who-is-img-wrapper">
+							<img src="images/video-section-img.webp" alt="" />
+						</div>
+						<div class="who-is-tablet-content">
+							<p class="who-is-tablet-text">
+								Рекрутер також організовує всі етапи співбесід, проведення
+								тестування і разом з технічним спеціалістом надає фідбек по
+								кожному кандидату.
+							</p>
+						</div>
+					</div>
+					<div class="who-is-btn-wrapper">
+						<button class="who-is-btn main-btn">
+							Зареєструватись безкоштовно
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="program-section" id="program">
+				<div class="container">
+					<p class="program-section-header h2-header">
+						На вебінарі ми розберемо:
+					</p>
+					<div class="row program-section-row">
+						<div class="program-section-text">
+							<div class="row program-section-item">
+								<div class="check-img"></div>
+								<div>В чому особливість професії рекрутера в IT</div>
+							</div>
+							<div class="row program-section-item">
+								<div class="check-img"></div>
+								<div>
+									Як потрапити в сферу IT не технічній людині, кодити або
+									тестити - не потрібно!
+								</div>
+							</div>
+							<div class="row program-section-item">
+								<div class="check-img"></div>
+								<div>
+									Перспективи розвитку кар'єри в IT і рівень заробітку на цій
+									посаді в США
+								</div>
+							</div>
+							<div class="row program-section-item">
+								<div class="check-img"></div>
+								<div>
+									Як знайти роботу в Штатах з ЗП від $80 000/рік, навіть якщо ви
+									новачок
+								</div>
+							</div>
+						</div>
+						<div class="program-section-img-wrapper">
+							<img
+								class="program-section-img"
+								src="./images/review-section-img.webp"
+								alt=""
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="companies-section">
+				<div class="container">
+					<p class="companies-section-header">Де працюють випускники SkillUp</p>
+					<div class="companies-slider">
+						<div class="companies-section-item company-1"></div>
+						<div class="companies-section-item company-2"></div>
+						<div class="companies-section-item company-3"></div>
+						<div class="companies-section-item company-4"></div>
+						<div class="companies-section-item company-5"></div>
+						<div class="companies-section-item company-6"></div>
+						<div class="companies-section-item company-7"></div>
+						<div class="companies-section-item company-8"></div>
+						<div class="companies-section-item company-10"></div>
+						<div class="companies-section-item company-11"></div>
+						<div class="companies-section-item company-12"></div>
+						<div class="companies-section-item company-14"></div>
+						<div class="companies-section-item company-15"></div>
+						<div class="companies-section-item company-18"></div>
+						<div class="companies-section-item company-19"></div>
+						<div class="companies-section-item company-20"></div>
+						<div class="companies-section-item company-21"></div>
+						<div class="companies-section-item company-22"></div>
+						<div class="companies-section-item company-23"></div>
+						<div class="companies-section-item company-24"></div>
+						<div class="companies-section-item company-26"></div>
+						<div class="companies-section-item company-27"></div>
+						<div class="companies-section-item company-29"></div>
+						<div class="companies-section-item company-30"></div>
+					</div>
+					<div class="companies-tablet-slider">
+						<div class="companies-section-item company-1"></div>
+						<div class="companies-section-item company-2"></div>
+						<div class="companies-section-item company-3"></div>
+						<div class="companies-section-item company-4"></div>
+						<div class="companies-section-item company-5"></div>
+						<div class="companies-section-item company-6"></div>
+						<div class="companies-section-item company-7"></div>
+						<div class="companies-section-item company-8"></div>
+						<div class="companies-section-item company-10"></div>
+						<div class="companies-section-item company-11"></div>
+						<div class="companies-section-item company-12"></div>
+						<div class="companies-section-item company-14"></div>
+						<div class="companies-section-item company-15"></div>
+						<div class="companies-section-item company-18"></div>
+						<div class="companies-section-item company-19"></div>
+						<div class="companies-section-item company-20"></div>
+						<div class="companies-section-item company-21"></div>
+						<div class="companies-section-item company-22"></div>
+						<div class="companies-section-item company-23"></div>
+						<div class="companies-section-item company-24"></div>
+						<div class="companies-section-item company-26"></div>
+						<div class="companies-section-item company-27"></div>
+						<div class="companies-section-item company-29"></div>
+						<div class="companies-section-item company-30"></div>
+					</div>
+				</div>
+			</section>
+			<section class="numbers-section">
+				<div class="container">
+					<p
+						data-aos="zoom-in"
+						data-aos-once="true"
+						class="numbers-header h2-header"
+					>
+						Курси від SkillUp — завжди актуальна інформація від
+						викладачів-практиків.
+					</p>
+					<div data-aos="zoom-in" data-aos-once="true" class="row numbers-row">
+						<div class="numbers-item">
+							<p>10+</p>
+							<p>років на ринку</p>
+						</div>
+						<div class="numbers-item">
+							<p>50 000+</p>
+							<p>випускників</p>
+						</div>
+						<div class="numbers-item">
+							<p>14 000+</p>
+							<p>студентів отримали роботу у перший місяць</p>
+						</div>
+						<div class="numbers-item">
+							<p>127+</p>
+							<p>IT-компаній співпрацюють з нами</p>
+						</div>
+					</div>
+					<div
+						data-aos="zoom-in"
+						data-aos-once="true"
+						class="numbers-comparison"
+					>
+						<div class="row numbers-comparison-item">
+							<div></div>
+							<div class="numbers-comparison-text1">Курс на YouTube</div>
+							<div class="numbers-comparison-text1">Самостійний пошук</div>
+							<div class="numbers-comparison-text1">Курси SkillUp</div>
+						</div>
+						<div class="row numbers-comparison-item">
+							<div class="numbers-comparison-text1">Актуальна інформація</div>
+							<div class="numbers-check-img"></div>
+							<div class="numbers-comparison-text2">Багато часу на пошук</div>
+							<div class="numbers-check-img"></div>
+						</div>
+						<div class="row numbers-comparison-item">
+							<div class="numbers-comparison-text1">Live-заняття</div>
+							<div class="numbers-x-img"></div>
+							<div class="numbers-x-img"></div>
+							<div class="numbers-check-img"></div>
+						</div>
+						<div class="row numbers-comparison-item">
+							<div
+								class="numbers-comparison-text1 numbers-comparsion-long-text"
+							>
+								Коучинг з допомогою в працевлаштуванні
+							</div>
+							<div class="numbers-x-img"></div>
+							<div class="numbers-x-img"></div>
+							<div class="numbers-check-img"></div>
+						</div>
+						<div class="row numbers-comparison-item">
+							<div class="numbers-comparison-text1">Практика з фідбеком</div>
+							<div class="numbers-x-img"></div>
+							<div class="numbers-x-img"></div>
+							<div class="numbers-check-img"></div>
+						</div>
+						<div class="row numbers-comparison-item">
+							<div class="numbers-comparison-text1">Група однодумців</div>
+							<div class="numbers-x-img"></div>
+							<div class="numbers-x-img"></div>
+							<div class="numbers-check-img"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="sign-up-section">
+				<div class="container">
+					<button class="sign-up-btn main-btn">
+						Записатись на безкоштовний вебінар
+					</button>
+				</div>
+			</section>
+			<section class="benefits-section" id="advantages">
+				<div class="container">
+					<p class="benefits-header h2-header">
+						Чому не варто пропускати цей вебінар:
+					</p>
+					<div class="benefits-wrapper">
+						<div class="row benefits-item">
+							<div class="check-img"></div>
+							<div class="benefits-item-text">
+								Ви отримаєте покроковий план як стартувати в професії рекрутера
+								та знайти роботу в США
+							</div>
+						</div>
+						<div class="row benefits-item">
+							<div class="check-img"></div>
+							<div class="benefits-item-text">
+								Зможете задати питання в прямому ефірі та отримати персональний
+								розбір від професійного рекрутера
+							</div>
+						</div>
+						<div class="row benefits-item">
+							<div class="check-img"></div>
+							<div class="benefits-item-text">
+								Виконаєте прості практичні завдання та зрозумієте, чи підходить
+								вам професія
+							</div>
+						</div>
+					</div>
+					<p class="benefits-footer">
+						І найголовніше — відчутні позитивні зміни у своєму житті!
+					</p>
+				</div>
+			</section>
+			<section class="coach-section">
+				<div class="container">
+					<div class="coach-section-content row">
+						<div class="coach-img-wrapper">
+							<img class="coach-img" src="images/coach-img.png" alt="" />
+						</div>
+						<div class="coach-section-description">
+							<p class="coach-section-content-header">Вас навчатиме</p>
+							<p class="coach-name">Базуріна Ольга</p>
+							<ul>
+								<li class="coach-section-list-item row">
+									<div class="coach-section-list-item-number"></div>
+									<p>
+										8 років досвіду в ІТ. З них 6 років у ІТ рекрутингу на
+										ринках США, Європи та України
+									</p>
+								</li>
+								<li class="coach-section-list-item row">
+									<div class="coach-section-list-item-number"></div>
+									<p>
+										Наймала кандидатів вищого рівня для компаній, що входять до
+										списку Fortune 500.
+									</p>
+								</li>
+								<li class="coach-section-list-item row">
+									<div class="coach-section-list-item-number"></div>
+									<p>
+										Працює Senior Talent Acquisition Manager в N-iX. Керує 3
+										командами інженерів. Займаєтсья повним циклом найму, пошуком
+										талантів, вдосконаленням процесів та комцнікацією з
+										клієнтами.
+									</p>
+								</li>
+								<li class="coach-section-list-item row">
+									<div class="coach-section-list-item-number"></div>
+									<p>
+										Займалась менторингом та адаптацією ньюкамерів на
+										американському ринку.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="form-section" id="registration">
+				<div class="container">
+					<div class="row form-section-wrapper">
+						<div class="form-section-text">
+							<p>92% наших випускників знаходять роботу протягом 3 місяців</p>
+							<p class="form-section-text-hide-tablet">
+								Варто задуматися: через 3 місяці після початку курсів ви можете
+								влаштуватись на роботу та отримувати в середньому
+								<span>$ХХХХХ-ХХХХХ/рік</span> на ІТ-ринку США.
+							</p>
+							<p>
+								Live-вебінар відбудеться <br />
+								XX січня XX:XX (GMT-4) за Нью-Йорком
+							</p>
+						</div>
+						<form class="form" id="form" method="POST" action="send.php">
+							<div class="row form-input">
+								<label class="label" for="name">Імʼя</label>
+								<input
+									style="padding-left: 10px"
+									type="text"
+									class="form-input"
+									name="name"
+									id="name"
+									placeholder="Ім'я"
+									required=""
+								/>
+							</div>
+							<div class="row form-input">
+								<label class="label" for="phone">Телефон</label>
+								<input
+									type="tel"
+									class="form-input"
+									name="phone1"
+									id="phone1"
+									required
+								/>
+								<div class="help-block"></div>
+							</div>
+							<div class="row form-input">
+								<label class="label" for="email">Email</label>
+								<input
+									style="padding-left: 10px"
+									type="email"
+									class="form-input"
+									name="email"
+									id="email"
+									placeholder="Email"
+									required=""
+									pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+									maxlength="25"
+								/>
+							</div>
+							<button type="submit" class="btn">
+								Записатись на безкоштовний вебінар
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="row footer-wrapper">
+					<a href="tel:+14842989289" style="color: white">+1 484 298 92 89</a>
+					<a href="mailto:office@skillup.ua" style="color: white"
+						>office@skillup.ua</a
+					>
+				</div>
+				<div class="footer-buttons">
+					<a href="https://t.me/skillup_for_ua" target="_blank"
+						><button class="telegram-btn"></button
+					></a>
+					<a href="https://www.facebook.com/skillup.ua" target="_blank"
+						><button class="facebook-btn"></button
+					></a>
+					<a
+						href="https://www.linkedin.com/company/skillup-ukraine-/"
+						target="_blank"
+						><button class="linkedin-btn"></button
+					></a>
+					<a href="https://www.instagram.com/skillup_it/" target="_blank"
+						><button class="instargam-btn"></button
+					></a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

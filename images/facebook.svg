@@ -1,0 +1,48 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 44" width="45" height="44">
+	<title>facebook-svg</title>
+	<defs>
+		<linearGradient id="g1" x1="21.7" y1="41" x2="22.5" y2="4.2" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#004dae"/>
+			<stop offset=".9" stop-color="#4497ff"/>
+		</linearGradient>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f1"> <feGaussianBlur stdDeviation="1"/> </filter>
+		<linearGradient id="g2" x1="22.5" y1="6.8" x2="22.5" y2="37.2" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#1778f2"/>
+			<stop offset="1" stop-color="#1778f2" stop-opacity=".6"/>
+		</linearGradient>
+		<linearGradient id="g3" x1="22.5" y1="2.5" x2="22.5" y2="41.5" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#7cb4fb"/>
+			<stop offset="1" stop-color="#0b6280"/>
+		</linearGradient>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f2"> <feGaussianBlur stdDeviation="2.5"/> </filter>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m26.25 15.87v3.33h5.54l-0.66 5.58h-4.88v16.75h-0.01v0.12c-1.89 0.51-5.66 0.39-7.18 0.05v-0.73-16.19h-3.89v-5.58h3.89v-3.73c0-4.7 1.96-7.44 7.89-7.44h4.84v5.58h-2.9c-2.31 0-2.64 0.76-2.64 2.26z"/>
+		</clipPath>
+		<linearGradient id="g4" x1="23.5" y1="8" x2="23.5" y2="42" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#ffffff"/>
+			<stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+		.s1 { filter: url(#f1);fill: url(#g2) } 
+		.s2 { filter: url(#f1);fill: none;stroke: url(#g3);stroke-width: .5 } 
+		.s3 { opacity: .5;filter: url(#f2);fill: #13488c } 
+		.s4 { fill: #ffffff } 
+		.s5 { fill: url(#g4) } 
+	</style>
+	<g id="Layer">
+		<path id="Layer" class="s0" d="m2.5 22c0-11 9-20 20-20 11 0 20 9 20 20 0 11-9 20-20 20-11 0-20-9-20-20z"/>
+		<g id="Layer">
+			<path id="Layer" class="s1" d="m3 22c0-10.8 8.7-19.5 19.5-19.5 10.8 0 19.5 8.7 19.5 19.5 0 10.8-8.7 19.5-19.5 19.5-10.8 0-19.5-8.7-19.5-19.5z"/>
+			<path id="Layer" class="s2" d="m3.3 22c0-10.6 8.6-19.2 19.2-19.2 10.6 0 19.2 8.6 19.2 19.2 0 10.6-8.6 19.2-19.2 19.2-10.6 0-19.2-8.6-19.2-19.2z"/>
+		</g>
+		<g id="Layer">
+			<path id="Layer" class="s3" d="m30.7 19.2l-0.6 5.3h-5.2v16h-7.7v-16h-4.1v-5.3h4.1v-3.6c0-4.4 2.1-7.1 8.4-7.1h5.1v5.4h-3c-2.5 0-2.8 0.7-2.8 2.1v3.2z"/>
+		</g>
+		<path id="Layer" fill-rule="evenodd" class="s4" d="m26.2 15.9v3.3h5.6l-0.7 5.6h-4.9v16.7 0.1c-1.9 0.6-5.6 0.4-7.1 0.1v-0.7-16.2h-3.9v-5.6h3.9v-3.7c0-4.7 1.9-7.5 7.8-7.5h4.9v5.6h-2.9c-2.3 0-2.7 0.8-2.7 2.3z"/>
+		<g id="Clip-Path" clip-path="url(#cp1)">
+			<path id="Layer" class="s5" d="m26.2 19.7h-0.5v-0.5h0.5zm5.6-1h0.6l-0.1 0.6-0.5-0.1zm-0.2 6.1v0.5h-0.5v-0.5zm-5.9-0.1v-0.5h0.5v0.5zm1 16.8v0.5h-0.5v-0.5zm-1 0v-0.5h0.5v0.5zm1 0.1v0.4l-0.3 0.1-0.2-0.5zm-7.7 0.5l-0.4-0.1v-0.4h0.5zm-0.4-1.2v-0.5h0.5v0.5zm1 0v0.5h-0.5v-0.5zm-0.5-16.7h0.5v0.5h-0.5zm-3.9 1h-0.5v-0.5h0.5zm-0.5-6.1v-0.5h0.5v0.5zm4.9 0v0.5h-0.5v-0.5zm12.2-11.6h0.5v0.5h-0.5zm0.5 6.1v0.5h-0.5v-0.5zm-6.5 5.5v-3.3h1v3.3zm6 0.5h-5.5v-1h5.5zm-1.2 5.1l0.7-5.6 1 0.1-0.7 5.6zm-4.3-0.4h4.8v1h-4.8zm-0.5 17.2v-16.7h1v16.7zm0.4-0.5h0.1v1h-0.1zm0.5 0.5v0.1h-1v-0.1zm-0.3 0.6c-1 0.3-2.5 0.4-3.9 0.4-1.4 0-2.7-0.2-3.5-0.3l0.2-1c0.7 0.1 2 0.3 3.3 0.3 1.4 0 2.7-0.1 3.6-0.4zm-7.8-0.4v-0.7h1v0.7zm0.5-1.2v1zm0.5-15.7v16.2h-1v-16.2zm-4.4-0.5h3.9v1h-3.9zm0.5-5.1v5.6h-1v-5.6zm3.4 0.5h-3.9v-1h3.9zm0.5-4.2v3.7h-1v-3.7zm7.4-7c-2.9 0-4.7 0.7-5.8 1.8-1.1 1.2-1.6 2.9-1.6 5.2h-1c0-2.4 0.5-4.4 1.9-5.9 1.3-1.4 3.5-2.1 6.5-2.1zm4.8 0h-4.8v-1h4.8zm-0.5 5.1v-5.6h1v5.6zm-2.4-0.5h2.9v1h-2.9zm-3.1 2.8c0-0.8 0.1-1.5 0.6-2.1 0.5-0.5 1.4-0.7 2.5-0.7v1c-1.1 0-1.6 0.2-1.8 0.4-0.2 0.3-0.3 0.6-0.3 1.4z"/>
+		</g>
+	</g>
+</svg>
