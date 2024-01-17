@@ -25,11 +25,22 @@ if (window.screen.height > 1100) {
 	}
 }
 
+let whoIsBtn = document.querySelectorAll('.header-menu-item-who-is');
 let programBtn = document.querySelectorAll('.header-menu-item-program');
 let coachBtn = document.querySelectorAll('.header-menu-item-coach');
 
+let whoIsSection = document.querySelector('.who-is-section');
 let programSection = document.querySelector('.program-section');
 let coachSection = document.querySelector('.coach-section');
+
+for (let i = 0; i < whoIsBtn.length; i++) {
+	whoIsBtn[i].addEventListener('click', () => {
+		window.scrollTo({
+			top: whoIsSection.getBoundingClientRect().top + window.scrollY - 100,
+			behavior: 'smooth',
+		});
+	});
+}
 
 for (let i = 0; i < programBtn.length; i++) {
 	programBtn[i].addEventListener('click', () => {

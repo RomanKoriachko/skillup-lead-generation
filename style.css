@@ -446,6 +446,7 @@ body {
   padding: 60px 0px;
   background-color: #efefef;
   text-align: center;
+  overflow: hidden;
 }
 .main .demand-section .demand-section-title {
   font-family: "Exo 2";
@@ -1027,7 +1028,16 @@ body {
 
 @media (max-width: 1200px) {
   .header .header-row {
-    grid-template-columns: 150px 1fr 300px;
+    grid-template-columns: 120px 1fr 260px;
+  }
+  .header .header-row .logo {
+    height: 50px;
+  }
+  .header .header-row .header-btn {
+    width: 260px;
+  }
+  .main .introduce-section {
+    margin-top: 72px;
   }
   .main .introduce-section .logo {
     margin-bottom: 30px;
@@ -1050,9 +1060,6 @@ body {
   .header .header-row {
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
-  }
-  .header .header-row .logo {
-    height: 50px;
   }
   .header .header-row .header-menu,
   .header .header-row .header-btn {
