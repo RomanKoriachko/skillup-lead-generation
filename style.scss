@@ -475,123 +475,6 @@ body {
 			@include mainButton();
 		}
 	}
-	// .companies-section {
-	// 	color: white;
-	// 	background: #0d1a30;
-	// 	padding-top: 50px;
-	// 	padding-bottom: 100px;
-	// 	overflow: hidden;
-	// 	.companies-section-header {
-	// 		@include fonts.h2();
-	// 		margin-bottom: 50px;
-	// 	}
-	// 	.companies-slider,
-	// 	.companies-tablet-slider {
-	// 		.companies-section-item {
-	// 			width: 184px;
-	// 			height: 184px;
-	// 			border: 4px solid #333142;
-	// 			border-radius: 12px;
-	// 			background-position: center;
-	// 			background-repeat: no-repeat;
-	// 			background-size: 85%;
-	// 			margin-right: 17px;
-	// 		}
-	// 		.company-1 {
-	// 			background-image: url(images/companies-logo-1.svg);
-	// 		}
-	// 		.company-2 {
-	// 			background-image: url(images/companies-logo-2.svg);
-	// 		}
-	// 		.company-3 {
-	// 			background-image: url(images/companies-logo-3.svg);
-	// 		}
-	// 		.company-4 {
-	// 			background-image: url(images/companies-logo-4.svg);
-	// 		}
-	// 		.company-5 {
-	// 			background-image: url(images/companies-logo-5.svg);
-	// 		}
-	// 		.company-6 {
-	// 			background-image: url(images/companies-logo-6.svg);
-	// 		}
-	// 		.company-7 {
-	// 			background-image: url(images/companies-logo-7.svg);
-	// 		}
-	// 		.company-8 {
-	// 			background-image: url(images/companies-logo-8.svg);
-	// 		}
-	// 		.company-9 {
-	// 			background-image: url(images/companies-logo-9.svg);
-	// 		}
-	// 		.company-10 {
-	// 			background-image: url(images/companies-logo-10.svg);
-	// 		}
-	// 		.company-11 {
-	// 			background-image: url(images/companies-logo-11.svg);
-	// 		}
-	// 		.company-12 {
-	// 			background-image: url(images/companies-logo-12.svg);
-	// 		}
-	// 		.company-13 {
-	// 			background-image: url(images/companies-logo-13.svg);
-	// 		}
-	// 		.company-14 {
-	// 			background-image: url(images/companies-logo-14.svg);
-	// 		}
-	// 		.company-15 {
-	// 			background-image: url(images/companies-logo-15.svg);
-	// 		}
-	// 		.company-16 {
-	// 			background-image: url(images/companies-logo-16.svg);
-	// 		}
-	// 		.company-17 {
-	// 			background-image: url(images/companies-logo-17.svg);
-	// 		}
-	// 		.company-18 {
-	// 			background-image: url(images/companies-logo-18.svg);
-	// 		}
-	// 		.company-19 {
-	// 			background-image: url(images/companies-logo-19.svg);
-	// 		}
-	// 		.company-20 {
-	// 			background-image: url(images/companies-logo-20.svg);
-	// 		}
-	// 		.company-21 {
-	// 			background-image: url(images/companies-logo-21.svg);
-	// 		}
-	// 		.company-22 {
-	// 			background-image: url(images/companies-logo-22.svg);
-	// 		}
-	// 		.company-23 {
-	// 			background-image: url(images/companies-logo-23.svg);
-	// 		}
-	// 		.company-24 {
-	// 			background-image: url(images/companies-logo-24.svg);
-	// 		}
-	// 		.company-25 {
-	// 			background-image: url(images/companies-logo-25.svg);
-	// 		}
-	// 		.company-26 {
-	// 			background-image: url(images/companies-logo-26.svg);
-	// 		}
-	// 		.company-27 {
-	// 			background-image: url(images/companies-logo-27.svg);
-	// 		}
-	// 		.company-28 {
-	// 			background-image: url(images/companies-logo-28.svg);
-	// 		}
-	// 		.company-29 {
-	// 			background-image: url(images/companies-logo-29.svg);
-	// 		}
-	// 		.company-30 {
-	// 			background-image: url(images/companies-logo-30.svg);
-	// 		}
-	// 	}
-	// 	.companies-tablet-slider {
-	// 		display: none;
-	// 	}
-	// }
 	.numbers-section {
 		padding-top: 100px;
 		padding-bottom: 104px;
@@ -651,59 +534,6 @@ body {
 			}
 		}
 	}
-	// .plan-section {
-	// 	padding: 60px 0px;
-	// 	text-align: center;
-	// 	.plan-title {
-	// 		font-style: italic;
-	// 		margin-bottom: 10px;
-	// 	}
-	// 	.plan-subtitle {
-	// 		@include fonts.p2();
-	// 	}
-	// 	.plan-wrapper {
-	// 		padding: 20px 16px;
-	// 		margin: 60px auto;
-	// 		margin-bottom: 0;
-	// 		background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
-	// 		border-radius: 6px;
-	// 		width: 60%;
-	// 		.plan-wrapper-text-1 {
-	// 			@include fonts.t2();
-	// 		}
-	// 		.plan-wrapper-text-2 {
-	// 			margin-top: 16px;
-	// 			@include fonts.p2();
-	// 		}
-	// 	}
-	// 	.plan-btn {
-	// 		@include mainButton();
-	// 	}
-	// }
-	// .benefits-section {
-	// 	padding-top: 100px;
-	// 	padding-bottom: 80px;
-	// 	background-color: #efefef;
-	// 	.benefits-header {
-	// 		margin-top: 0;
-	// 	}
-	// 	.check-img {
-	// 		background-image: url(images/check-3-img.svg);
-	// 	}
-	// 	.benefits-wrapper {
-	// 		display: grid;
-	// 		grid-template-columns: repeat(3, 1fr);
-	// 		gap: 24px;
-	// 		.benefits-item {
-	// 			@include fonts.t2();
-	// 		}
-	// 	}
-	// 	.benefits-footer {
-	// 		@include fonts.p2();
-	// 		text-align: center;
-	// 		margin-top: 32px;
-	// 	}
-	// }
 	.form-section {
 		background: #0d1a30;
 		color: #ffffff;
@@ -1015,18 +845,6 @@ body {
 				}
 			}
 		}
-		// .companies-section {
-		// 	.companies-section-header {
-		// 		text-align: center;
-		// 		@include fonts.h3();
-		// 	}
-		// 	.companies-tablet-slider {
-		// 		display: block;
-		// 	}
-		// 	.companies-slider {
-		// 		display: none;
-		// 	}
-		// }
 		.numbers-section {
 			padding-bottom: 48px;
 			.numbers-row {
@@ -1038,20 +856,6 @@ body {
 				}
 			}
 		}
-		// .plan-section {
-		// 	.plan-wrapper {
-		// 		width: 80%;
-		// 	}
-		// }
-		// .benefits-section {
-		// 	padding-bottom: 48px;
-		// 	.benefits-wrapper {
-		// 		grid-template-columns: 1fr;
-		// 	}
-		// 	.benefits-footer {
-		// 		margin-top: 24px;
-		// 	}
-		// }
 		.form-section {
 			.form-section-wrapper {
 				flex-direction: column;
@@ -1220,41 +1024,11 @@ body {
 				@include fonts.b2();
 			}
 		}
-		// .companies-section {
-		// 	padding-top: 48px;
-		// 	padding-bottom: 48px;
-		// 	margin-top: 0;
-		// 	margin-bottom: 0;
-		// 	.companies-section-header {
-		// 		margin-bottom: 48px;
-		// 		text-align: left;
-		// 	}
-		// 	.companies-slider {
-		// 		.companies-section-item {
-		// 			width: 160px;
-		// 			height: 160px;
-		// 			margin-right: 10px;
-		// 		}
-		// 	}
-		// }
 		.numbers-section {
 			.numbers-header {
 				font-size: 26px;
 			}
 		}
-		// .plan-section {
-		// 	padding: 30px 0px;
-		// 	.plan-wrapper {
-		// 		width: 100%;
-		// 		margin-top: 24px;
-		// 	}
-		// }
-		// .benefits-section {
-		// 	padding-top: 40px;
-		// 	.benefits-footer {
-		// 		text-align: left;
-		// 	}
-		// }
 		.form-section {
 			.form-section-wrapper {
 				gap: 24px;
